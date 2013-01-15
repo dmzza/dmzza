@@ -258,12 +258,12 @@ $(function() {
 	$(window).delegate("div.horizontal:not(.nowheeljack) > div, div.horizontal:not(.nowheeljack) > ul, #drawer div.horizontal", "mousewheel", function(ev, delta, deltaX, deltaY) {
 		
 		if ($(window).scrollLeft() >= $(document).width() - $(window).width() - 10) {
-				$('.thumbnails').css("width", "+=240");
+				$('.thumbnails').css("width", "+=160");
 				color = Math.floor(Math.random()*16777215)
 				inverse = 16777215 - color;
 				color = color.toString(16);
 				inverse = inverse.toString(16);
-				$('<li class="span3"><a href="#" class="thumbnail"><img src="http://placehold.it/220x220/' + color + '/' + inverse + '&text=' + (counter++) + '" alt=""></a></li>').appendTo('ul.thumbnails');
+				$('<li class="span2"><a href="#" class="thumbnail"><img src="http://placehold.it/220x220/' + color + '/' + inverse + '&text=' + (counter++) + '" alt=""></a></li>').appendTo('ul.thumbnails');
 		 }
 			var f = !0, 
 					g = $(ev.target).closest("#mixData"), 
@@ -290,8 +290,12 @@ $(function() {
 		// $(".header").css('background-color', '#' + bg);
 		if(isPlaceholder !== -1)
 			$(".header").html($(this).html().replace("220x220", "410x410"));
-		if(isInstagram !== -1)
-			$(".header").html($(this).html().replace("size=m", "size=l"));
+		if(isInstagram !== -1) {
+			$(".header").css('background-image', 'url(' + $(this).find('img').attr('src').replace("size=m", "size=l") + ')');
+			$(".header").animate({'background-position-y': '100%'}, 20000, 'linear', function() {
+				$(".header").animate({'background-position-y': '0%'}, 20000, 'linear');
+			});
+		}
 	});
 	
 	$(".icon-gift").parent().on('click', function() {

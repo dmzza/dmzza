@@ -8,8 +8,9 @@ body {
 
 .header {
 	position: fixed;
-	height: 400px;
+	height: 70%;
 	background-color:#7f013f;
+	background-size:cover;
 	color: #ff007c;
 	text-align: center;
 	border-bottom:1px solid white;
@@ -32,9 +33,9 @@ body {
 }
 
 .thumbnails {
-	top: 440px;
+	top: 75%;
 	left: 20px;
-	width: 2200px;
+	width: 1800px;
 	position: absolute;
 }
 
