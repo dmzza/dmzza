@@ -16,12 +16,15 @@ function RGB2Color(r,g,b) {
 }
 
 $(function() {
-	
-	var CENTERED = 85; //for a 170px diameter
+	var SCALE = 3;
+	var CENTERED = 85 * SCALE; //for a 170px diameter
 			total = 4,
 			circle = $(".circle").clone(),
-			radius = 70;
-	
+			radius = 70 * SCALE;
+	$(".circles").css({
+		'margin-top': -88 * SCALE,
+		'margin-left': -88 * SCALE
+	})
 	for(var i = 0; i < total*2; i++) {
 		
 		var circle = circle.clone(),
@@ -32,13 +35,15 @@ $(function() {
 		console.log(x);
 		circle.addClass('first-layer');
 		circle.css({
+			width: 170 * SCALE,
+			height: 170 * SCALE,
 			top: y,
 			left: x
 		});
 		circle.appendTo(".circles");
 	}
 	
-	radius = 57;
+	radius = 57 * SCALE;
 	for(var i = 0; i < total*2; i++) {
 		
 		var circle = circle.clone(),
@@ -49,15 +54,15 @@ $(function() {
 		console.log(x);
 		circle.removeClass('first-layer').addClass('second-layer')
 		circle.css({
-			width: 140,
-			height: 140,
-			top: y + 15,
-			left: x + 15
+			width: 140 * SCALE,
+			height: 140 * SCALE,
+			top: y + 15 * SCALE,
+			left: x + 15 * SCALE
 		});
 		circle.appendTo(".circles");
 	}
 	
-	radius = 44;
+	radius = 44 * SCALE;
 	for(var i = 0; i < total*2; i++) {
 		
 		var circle = circle.clone(),
@@ -68,15 +73,15 @@ $(function() {
 		console.log(x);
 		circle.removeClass('second-layer').addClass('third-layer')
 		circle.css({
-			width: 110,
-			height: 110,
-			top: y + 30,
-			left: x + 30
+			width: 110 * SCALE,
+			height: 110 * SCALE,
+			top: y + 30 * SCALE,
+			left: x + 30 * SCALE
 		});
 		circle.appendTo(".circles");
 	}
 	
-	radius = 31;
+	radius = 31 * SCALE;
 	for(var i = 0; i < total*2; i++) {
 		
 		var circle = circle.clone(),
@@ -87,10 +92,10 @@ $(function() {
 		console.log(x);
 		circle.removeClass('third-layer').addClass('fourth-layer')
 		circle.css({
-			width: 80,
-			height: 80,
-			top: y + 45,
-			left: x + 45
+			width: 80 * SCALE,
+			height: 80 * SCALE,
+			top: y + 45 * SCALE,
+			left: x + 45 * SCALE
 		});
 		circle.appendTo(".circles");
 	}
@@ -198,6 +203,9 @@ $(function() {
 		$(".header").css({
 			'background-color': color,
 			'color': inverse
+		});
+		$(".circle").css({
+			'border-color': inverse
 		})
 	}, 10);
 	
@@ -283,6 +291,8 @@ $(function() {
 	$(".thumbnails").on("click", "li", function() {
 		isPlaceholder = $(this).html().indexOf("220x220");
 		isInstagram = $(this).html().indexOf("size=m");
+
+		$(".circles").hide()
 		// start = pos + 8;
 		// end = pos + 14;
 		// bg = $(this).html().slice(start, end);

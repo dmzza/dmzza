@@ -14,6 +14,7 @@ body {
 	color: #ff007c;
 	text-align: center;
 	border-bottom:1px solid white;
+	overflow: hidden;
 	h1 {
 		font-size: 7em;
 		margin-top: 150px;
@@ -48,18 +49,18 @@ body {
 
 .circle {
 	border-radius: 50%;
-	border: 1px rgba(0,0,0,0.9) solid;
+	border: 1px rgba(255,255,255,0.9) solid;
 	width: 170px;
 	height: 170px;
 	position: absolute;
-	background-color: rgba(0, 0, 0, 0.8);
-	@include opacity(0.2);
 	&:first-child {
 		display: none;
 	}
 }
 .circles {
 	position: absolute;
-	top:-350px;
-	left: 100px;
+	top: 50%;
+	left: 50%;
+	margin-top:-88px;
+	margin-left:-88px;
 }
