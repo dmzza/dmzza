@@ -34,10 +34,16 @@ body {
 }
 
 .thumbnails {
-	top: 75%;
+	top: 70%;
 	left: 20px;
+	height: 30%;
 	width: 1800px;
 	position: absolute;
+	li {
+		top: 50%;
+		position: relative;
+		margin-top: -70px;
+	}
 }
 
 .thumbnail {
@@ -63,4 +69,13 @@ body {
 	left: 50%;
 	margin-top:-88px;
 	margin-left:-88px;
+}
+
+@media (max-width: 900px) {
+	.span2 {
+		width: 100px;
+	}
+	.thumbnails > li {
+		margin-top: -50px;
+	}
 }
