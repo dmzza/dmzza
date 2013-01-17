@@ -301,9 +301,32 @@ $(function() {
 		if(isPlaceholder !== -1)
 			$(".header").html($(this).html().replace("220x220", "410x410"));
 		if(isInstagram !== -1) {
-			$(".header").css('background-image', 'url(' + $(this).find('img').attr('src').replace("size=m", "size=l") + ')');
-			$(".header").animate({'background-position-y': '100%'}, 20000, 'linear', function() {
-				$(".header").animate({'background-position-y': '0%'}, 20000, 'linear');
+			img = $(this).find('img');
+			timer = 0;
+			easing = 'linear';
+
+			if(img.data('full')) {
+				$(".header").css('background-image', 'url(' + img.data('full') + ')');
+			} else {
+				$(".header").css('background-image', 'url(' + img.attr('src').replace("size=m", "size=l") + ')');
+			}
+			$(".header").animate({'background-position-y': '100%'}, 40000, easing, function() {
+				$(".header").animate({'background-position-y': '0%'}, 40000, easing);
+			});
+			ticker = setInterval(function() { timer++; }, 1000);
+			$(".header").on("mouseenter", function() {
+				$(this).stop();
+				window.clearInterval(ticker);
+			});
+			
+			$(".header").on("mouseleave", function() {
+				if(timer < 40)
+					$(".header").animate({'background-position-y': '100%'}, 40000 - (timer * 1000), easing, function() {
+						$(".header").animate({'background-position-y': '0%'}, 40000, easing);
+					});
+				else if(timer < 80)
+					$(".header").animate({'background-position-y': '0%'}, 40000 - ((timer - 40) * 1000), easing);
+				ticker = setInterval(function() { timer++; }, 1000);
 			});
 		}
 	});
