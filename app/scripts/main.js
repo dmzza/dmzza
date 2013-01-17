@@ -303,6 +303,7 @@ $(function() {
 		if(isInstagram !== -1) {
 			img = $(this).find('img');
 			timer = 0;
+			duration = 120; // in seconds
 			easing = 'linear';
 
 			if(img.data('full')) {
@@ -310,8 +311,10 @@ $(function() {
 			} else {
 				$(".header").css('background-image', 'url(' + img.attr('src').replace("size=m", "size=l") + ')');
 			}
-			$(".header").animate({'background-position-y': '100%'}, 40000, easing, function() {
-				$(".header").animate({'background-position-y': '0%'}, 40000, easing);
+			$(".header").stop();
+			$(".header").css({'background-position-y': '0%'});
+			$(".header").animate({'background-position-y': '100%'}, duration * 1000, easing, function() {
+				$(".header").animate({'background-position-y': '0%'}, duration * 1000, easing);
 			});
 			ticker = setInterval(function() { timer++; }, 1000);
 			$(".header").on("mouseenter", function() {
@@ -320,12 +323,12 @@ $(function() {
 			});
 			
 			$(".header").on("mouseleave", function() {
-				if(timer < 40)
-					$(".header").animate({'background-position-y': '100%'}, 40000 - (timer * 1000), easing, function() {
-						$(".header").animate({'background-position-y': '0%'}, 40000, easing);
+				if(timer < duration)
+					$(".header").animate({'background-position-y': '100%'}, (duration * 1000) - (timer * 1000), easing, function() {
+						$(".header").animate({'background-position-y': '0%'}, (duration * 1000), easing);
 					});
-				else if(timer < 80)
-					$(".header").animate({'background-position-y': '0%'}, 40000 - ((timer - 40) * 1000), easing);
+				else if(timer < duration * 2)
+					$(".header").animate({'background-position-y': '0%'}, (duration * 1000) - ((timer - duration) * 1000), easing);
 				ticker = setInterval(function() { timer++; }, 1000);
 			});
 		}
