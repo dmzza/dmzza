@@ -1,5 +1,6 @@
 @import "compass_twitter_bootstrap";
 @import "compass/css3/opacity";
+@import "compass/css3/filter";
 
 body {
 	background-color: #f0ecef;
@@ -8,9 +9,15 @@ body {
 
 .header {
 	position: fixed;
-	height: 70%;
+	height: 80%;
+	width: 105% !important;
+	top:-5px;
+	left:-5px;
 	background-color:#7f013f;
 	background-size:cover;
+	/*background-position-y:0%;
+    -webkit-transition:background-position-y 60s linear;*/
+	@include filter(blur(5px));
 	color: #ff007c;
 	text-align: center;
 	border-bottom:1px solid white;
@@ -24,6 +31,9 @@ body {
 		font-weight: 300;
 	}
 }
+/*.header:hover {
+	background-position-y:100%;
+}*/
 .insanity {
 	display: none;
 }
@@ -34,11 +44,12 @@ body {
 }
 
 .thumbnails {
-	top: 70%;
+	top: 75%;
 	left: 20px;
-	height: 30%;
+	height: 25%;
 	width: 1800px;
 	position: absolute;
+	background-color:rgba(0,0,0,1.0);
 	li {
 		top: 50%;
 		position: relative;
@@ -47,6 +58,7 @@ body {
 }
 
 .thumbnail {
+	border-color: #222;
 	margin: -5px;
 	img {
 		max-height: 100%;
@@ -64,8 +76,8 @@ body {
 	}
 }
 .circles {
-	position: absolute;
-	top: 50%;
+	position: fixed;
+	top: 40%;
 	left: 50%;
 	margin-top:-88px;
 	margin-left:-88px;
