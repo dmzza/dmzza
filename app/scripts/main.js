@@ -32,7 +32,6 @@ $(function() {
 				x = radius * Math.cos(angle),
 				y = radius * Math.sin(angle);
 		
-		console.log(x);
 		circle.addClass('first-layer');
 		circle.css({
 			width: 170 * SCALE,
@@ -51,7 +50,6 @@ $(function() {
 				x = radius * Math.cos(angle),
 				y = radius * Math.sin(angle);
 		
-		console.log(x);
 		circle.removeClass('first-layer').addClass('second-layer')
 		circle.css({
 			width: 140 * SCALE,
@@ -70,7 +68,6 @@ $(function() {
 				x = radius * Math.cos(angle),
 				y = radius * Math.sin(angle);
 		
-		console.log(x);
 		circle.removeClass('second-layer').addClass('third-layer')
 		circle.css({
 			width: 110 * SCALE,
@@ -89,7 +86,6 @@ $(function() {
 				x = radius * Math.cos(angle),
 				y = radius * Math.sin(angle);
 		
-		console.log(x);
 		circle.removeClass('third-layer').addClass('fourth-layer')
 		circle.css({
 			width: 80 * SCALE,
@@ -99,6 +95,8 @@ $(function() {
 		});
 		circle.appendTo(".circles");
 	}
+
+	
 	
 	// for(var i = 0; i < total*2; i++) {
 	// 	var flip = 1,
@@ -334,15 +332,17 @@ $(function() {
 		}
 	});
 	
-	$(".icon-gift").parent().on('click', function() {
-		$(".sanity").toggle();
-		$(".insanity").toggle();
-		if($(".header").css('-webkit-transform') === 'none')
-			$(".header").css({ '-webkit-transform': 'rotate(180deg)'});
-		else
-			$(".header").css({ '-webkit-transform': 'none'});
+	// Easter egg
+
+	// $(".icon-gift").parent().on('click', function() {
+	// 	$(".sanity").toggle();
+	// 	$(".insanity").toggle();
+	// 	if($(".header").css('-webkit-transform') === 'none')
+	// 		$(".header").css({ '-webkit-transform': 'rotate(180deg)'});
+	// 	else
+	// 		$(".header").css({ '-webkit-transform': 'none'});
 		
-	})
+	// })
 	
 	
 });
