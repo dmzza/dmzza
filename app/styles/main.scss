@@ -1,6 +1,7 @@
 @import "compass_twitter_bootstrap";
 @import "compass/css3/opacity";
 @import "compass/css3/filter";
+@import "compass/css3/transition";
 
 body {
 	background-color: #f0ecef;
@@ -81,6 +82,18 @@ body {
 	left: 50%;
 	margin-top:-88px;
 	margin-left:-88px;
+}
+.condensed {
+	width: 200px;
+	height: 200px;
+	top: 75px;
+	margin-left: -100px !important;
+	@include transition(top 0.15s);
+	overflow: hidden;
+	cursor: pointer;
+}
+.condensed:hover {
+	top:250px;
 }
 
 @media (max-width: 900px) {

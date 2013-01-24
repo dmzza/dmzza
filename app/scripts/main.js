@@ -202,6 +202,9 @@ $(function() {
 			'background-color': color,
 			'color': inverse
 		});
+		$(".circles").css({
+			'background-color': color,
+		});
 		$(".circle").css({
 			'border-color': inverse
 		})
@@ -285,12 +288,29 @@ $(function() {
 			//document.getElementById("carousel").scrollLeft += 1 * 30;
 			//ev.preventDefault();
 	});
-	
+
+	// Condensed circles handlers
+
+	$('.row-fluid').on('click', '.condensed', function() {
+		$(this).removeClass('condensed');
+		$(".circle").css({
+			top: '+=155px',
+			left: '+=155px'
+		});
+		$('.header').css('background-image', 'none');
+	});
+
 	$(".thumbnails").on("click", "li", function() {
 		isPlaceholder = $(this).html().indexOf("220x220");
 		isInstagram = $(this).html().indexOf("size=m");
-
-		$(".circles").hide()
+		if(!$(".circles").hasClass('condensed')) {
+			$(".circle").css({
+				top: '-=155px',
+				left: '-=155px'
+			});
+			
+			$(".circles").addClass('condensed'); 
+		}
 		// start = pos + 8;
 		// end = pos + 14;
 		// bg = $(this).html().slice(start, end);
