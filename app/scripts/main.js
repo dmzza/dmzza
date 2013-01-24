@@ -179,12 +179,16 @@ $(function() {
 	
 	//Header background
 	counter = 10;
-	
+
+	frequency = 1/60000;
+	now = new Date();
+	jan1 = new Date(now.getFullYear(), now.getMonth(), now.getDay(), 0, 0, 0, 0);
 	setInterval(function() {
-		frequency = 1/60000;
+		
 		now = new Date();
-		jan1 = new Date(now.getFullYear(), now.getMonth(), now.getDay(), 0, 0, 0, 0);
+		
 		diff = (now - jan1);
+
 		red = Math.floor(Math.sin(frequency*diff + 0) * 127 + 128);
 		green = Math.floor(Math.sin(frequency*diff + 2) * 127 + 128);
 		blue = Math.floor(Math.sin(frequency*diff + 4) * 127 + 128);
@@ -192,12 +196,10 @@ $(function() {
 		green2 = Math.floor(Math.sin(frequency*diff + 2.65) * 127 + 128);
 		blue2 = Math.floor(Math.sin(frequency*diff + 4.65) * 127 + 128);
 		
-		color = RGB2Color(red, green, blue);
-		//inverse = RGB2Color(256-red, 256-green, 256-blue); //16777215 - color;
-		inverse = RGB2Color(red2-100, green2-100, blue2-100);
-		//color = color.toString(16);
-		//inverse = inverse.toString(16);
-		// console.log(color);
+		//color = RGB2Color(red, green, blue);
+		color = 'rgb(' + red + ', ' + green + ', ' + blue + ')';
+		//inverse = RGB2Color(red2-100, green2-100, blue2-100);
+		inverse = 'rgb(' + (red2-100) + ', ' + (green2-100) + ', ' + (blue2-100) + ')';
 		$(".header").css({
 			'background-color': color,
 			'color': inverse
@@ -208,7 +210,7 @@ $(function() {
 		$(".circle").css({
 			'border-color': inverse
 		})
-	}, 10);
+	}, 1000);
 	
 	function onScroll(ev) {
 
@@ -326,6 +328,8 @@ $(function() {
 
 			if(img.data('full')) {
 				$(".header").css('background-image', 'url(' + img.data('full') + ')');
+				$(".work").show();
+				$(".work img").attr('src', img.data('full'));
 			} else {
 				$(".header").css('background-image', 'url(' + img.attr('src').replace("size=m", "size=l") + ')');
 			}
