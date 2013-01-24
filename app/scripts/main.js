@@ -309,26 +309,29 @@ $(function() {
 			} else {
 				$(".header").css('background-image', 'url(' + img.attr('src').replace("size=m", "size=l") + ')');
 			}
-			$(".header").stop();
-			$(".header").css({'background-position-y': '0%'});
-			$(".header").animate({'background-position-y': '100%'}, duration * 1000, easing, function() {
-				$(".header").animate({'background-position-y': '0%'}, duration * 1000, easing);
-			});
-			ticker = setInterval(function() { timer++; }, 1000);
-			$(".header").on("mouseenter", function() {
-				$(this).stop();
-				window.clearInterval(ticker);
-			});
+
+			// Header blurred background panning loop
+
+			// $(".header").stop();
+			// $(".header").css({'background-position-y': '0%'});
+			// $(".header").animate({'background-position-y': '100%'}, duration * 1000, easing, function() {
+			// 	$(".header").animate({'background-position-y': '0%'}, duration * 1000, easing);
+			// });
+			// ticker = setInterval(function() { timer++; }, 1000);
+			// $(".header").on("mouseenter", function() {
+			// 	$(this).stop();
+			// 	window.clearInterval(ticker);
+			// });
 			
-			$(".header").on("mouseleave", function() {
-				if(timer < duration)
-					$(".header").animate({'background-position-y': '100%'}, (duration * 1000) - (timer * 1000), easing, function() {
-						$(".header").animate({'background-position-y': '0%'}, (duration * 1000), easing);
-					});
-				else if(timer < duration * 2)
-					$(".header").animate({'background-position-y': '0%'}, (duration * 1000) - ((timer - duration) * 1000), easing);
-				ticker = setInterval(function() { timer++; }, 1000);
-			});
+			// $(".header").on("mouseleave", function() {
+			// 	if(timer < duration)
+			// 		$(".header").animate({'background-position-y': '100%'}, (duration * 1000) - (timer * 1000), easing, function() {
+			// 			$(".header").animate({'background-position-y': '0%'}, (duration * 1000), easing);
+			// 		});
+			// 	else if(timer < duration * 2)
+			// 		$(".header").animate({'background-position-y': '0%'}, (duration * 1000) - ((timer - duration) * 1000), easing);
+			// 	ticker = setInterval(function() { timer++; }, 1000);
+			// });
 		}
 	});
 	
