@@ -274,7 +274,7 @@ $(function() {
 				inverse = 16777215 - color;
 				color = color.toString(16);
 				inverse = inverse.toString(16);
-				$('<li class="span2"><a href="#" class="thumbnail"><img src="http://placehold.it/220x220/' + color + '/' + inverse + '&text=' + (counter++) + '" alt=""></a></li>').appendTo('ul.thumbnails');
+				$('<li class="span2"><a href="#"><img src="http://placehold.it/220x220/' + color + '/' + inverse + '&text=' + (counter++) + '" alt=""></a></li>').appendTo('ul.thumbnails');
 		 }
 			var f = !0, 
 					g = $(ev.target).closest("#mixData"), 
@@ -299,6 +299,7 @@ $(function() {
 			top: '+=155px',
 			left: '+=155px'
 		});
+		$(".work").hide();
 		$('.header').css('background-image', 'none');
 	});
 
@@ -318,20 +319,26 @@ $(function() {
 		// bg = $(this).html().slice(start, end);
 		// 
 		// $(".header").css('background-color', '#' + bg);
+		$(".work").show();
+		img = $(this).find('img');
 		if(isPlaceholder !== -1)
-			$(".header").html($(this).html().replace("220x220", "410x410"));
+			$(".work img").attr('src', img.attr('src').replace("220x220", "612x612"));
 		if(isInstagram !== -1) {
-			img = $(this).find('img');
 			timer = 0;
 			duration = 120; // in seconds
 			easing = 'linear';
 
 			if(img.data('full')) {
-				$(".header").css('background-image', 'url(' + img.data('full') + ')');
-				$(".work").show();
+				//$(".header").css('background-image', 'url(' + img.data('full') + ')');
 				$(".work img").attr('src', img.data('full'));
 			} else {
-				$(".header").css('background-image', 'url(' + img.attr('src').replace("size=m", "size=l") + ')');
+				//$(".header").css('background-image', 'url(' + img.attr('src').replace("size=m", "size=l") + ')');
+				$(".work img").attr('src', img.attr('src').replace("size=m", "size=l"));
+			}
+			if(img.data('link')) {
+				$(".work a").attr('href', img.data('link'));
+			} else {
+				$(".work a").attr('href', '#');
 			}
 
 			// Header blurred background panning loop
@@ -358,7 +365,15 @@ $(function() {
 			// });
 		}
 	});
-	
+
+	$(".work img").on("mouseenter", function() {
+		$(this).css("border-color", color);
+		//$(".thumbnails").css("background-color", color);
+	});
+	$(".work img").on("mouseleave", function() {
+		$(this).css("border-color", "#070707");
+		//$(".thumbnails").css("background-color", "black");
+	});
 	// Easter egg
 
 	// $(".icon-gift").parent().on('click', function() {
