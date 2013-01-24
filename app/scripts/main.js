@@ -323,6 +323,7 @@ $(function() {
 		img = $(this).find('img');
 		if(isPlaceholder !== -1)
 			$(".work img").attr('src', img.attr('src').replace("220x220", "612x612"));
+			$(".work a").attr('href', '#');
 		if(isInstagram !== -1) {
 			timer = 0;
 			duration = 120; // in seconds
@@ -338,7 +339,7 @@ $(function() {
 			if(img.data('link')) {
 				$(".work a").attr('href', img.data('link'));
 			} else {
-				$(".work a").attr('href', '#');
+				$(".work a").attr('href', img.attr('src').replace("media?size=m", ""));
 			}
 
 			// Header blurred background panning loop
