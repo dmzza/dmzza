@@ -7,6 +7,11 @@ body {
 	background-color: #FFF;
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
+
 header {
 	position: absolute;
 	margin: 0px 0 0 0px;
@@ -25,12 +30,18 @@ header {
 		box-shadow: 0px 0px 10px 0px rgba(0,0,30,0.1);
 		background-color: white;
 		img {
+			margin-bottom: 75px;
 			transform:rotate(30deg);
 			-ms-transform:rotate(30deg); /* IE 9 */
 			-webkit-transform:rotate(30deg); /* Safari and Chrome */
 		}
+		ul {
+			@include single-transition(all, 0.3s, ease, false);
+			margin-top: 285px;
+		}
 	}
 	img {
+		position: fixed;
 		width: 210px;
 		margin: 60px;
 		margin-top: 30px;
@@ -39,6 +50,36 @@ header {
 	p {
 		margin: 10px 35px;
 		font-family: "effra",sans-serif;
+	}
+	ul {
+		@include single-transition(all, 0.3s, ease, false);
+		margin: 0; padding: 0;
+		margin-top: 270px;
+		position: absolute;
+		z-index: 200;
+		height: 100%;
+		width: 100%;
+		font-family: "effra",sans-serif;
+		font-size: 1.4em;
+		font-weight: 100;
+		color: white;
+		text-align: center;
+		background-color: #333;
+		li {
+			margin: 0; padding: 30px 40px;
+			&:nth-child(1) {
+				background-color: #0ec992;
+			}
+			&:nth-child(2) {
+				background-color: #282c49;
+			}
+			&:nth-child(3) {
+				background-color: #d65e6a; /*8679d6;*/
+			}
+			&:nth-child(4) {
+				background-color: #964db5;
+			}
+		}
 	}
 }
 
