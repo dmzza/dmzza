@@ -5,3 +5,5 @@ temp
 npm-debug.log
 
 .DS_Store
+
+_site
