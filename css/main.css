@@ -326,14 +326,9 @@ img {
 
 .post pre.terminal code { background-color: #333; }
 
-.blank {
-	width:100%;
-	background-color:#eee;
-}
+img.blank { content:url("../img/blank.png"); }
 
-img.blank {
-  content:url("../img/blank.png");
-}
+img.img-responsive { background-color:#eee; }
 
 /* Syntax highlighting styles */
 /* ----------------------------------------------------------*/
