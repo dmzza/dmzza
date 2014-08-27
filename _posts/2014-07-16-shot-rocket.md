@@ -7,4 +7,4 @@ thumbnail: "/img/Shot Rocket Icon.png"
 hero: "/img/Shot Rocket Icon@2x.png"
 ---
 
-Shot Rocket is an iPhone app for amateur photographers who take too many photos to sort through easily. Adobe Lightroom is more than I need, so I'm building this to sort photos in my spare time.
+Shot Rocket is an app for iPhone photographers who want to find their best shots in the camera roll. I take too many photos to sort through in the Photos app but Adobe Lightroom is overkill, so I'm building something in between.
