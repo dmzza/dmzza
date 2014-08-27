@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {% for post in site.categories.blog limit:1 %}
+    <div class="post-header">
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}#hero">
+        {% if post.thumbnail %}
+          <img src="{{ post.thumbnail | prepend: site.baseurl }}" class="img-responsive">
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+      </a>
+    </div>
+  {% endfor %}
+
+  <h2>Portfolio</h2>
+  {% include portfolio.html %}
+
+</div>
