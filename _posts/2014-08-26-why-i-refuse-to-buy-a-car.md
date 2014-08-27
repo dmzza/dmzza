@@ -3,7 +3,7 @@ layout: post
 title:  "Why I Refuse to Buy a Car"
 date:   2014-08-26 19:30:00
 categories: blog
-thumbnail: "/img/Clarion Music Society 2.png"
+thumbnail: "/img/driverless.jpg"
 youtube: "rld0KDcan_w"
 ---
 
@@ -14,10 +14,10 @@ youtube: "rld0KDcan_w"
 > George Carlin
 
 I have two road bikes, one for myself, and another in case a friend wants to
-ride with me. I see a lot of bikes with the sticker "one less car" which I think
-is bullshit. It assumes that the rider would otherwise require a car to get where
-she needs to go. The reason I ride a bike is because it is more enjoyable than
-driving, and it is the human body and brain is well suited for it. Whenever I
+ride with me. I see a lot of bikes with the sticker "one less car" which never
+applied to me. It assumes that the rider would otherwise require a car to get
+where she needs to go. The reason I ride a bike is because it is more enjoyable
+than driving and the human body and brain is well suited for it. Whenever I
 need to drive a car in the city, I constantly think about how I would rather
 be biking. For me, riding a bike has nothing to do with saving the environment
 or reducing congestion. It is an entirely selfish desire. If riding a bike had
@@ -26,9 +26,9 @@ an even worse environmental impact than driving a car, I would still do it.
 Humans are not well suited for driving a car when other cars are around. That's
 why it is so deadly. That's why I dislike driving a car. It's not because I'm
 afraid of an accident, it is just because it feels so unnatural and unpleasant.
-From a user experience perspective, driving a car in traffic is miserable. It is
-a self-perpetuating misery, because traffic only exists because we are forced to
-drive our own cars.
+From a user experience perspective, driving a car in traffic is miserable. Worse
+yet, that miserable and frustrating human experience is usually the cause of 
+traffic in the first place.
 
 Computers are far more well suited to drive amongst other human drivers, and even
 more well suited to drive amongst only other autonomous cars. In the best case
