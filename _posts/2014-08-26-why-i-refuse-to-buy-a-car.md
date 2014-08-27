@@ -27,10 +27,10 @@ Humans are not well suited for driving a car when other cars are around. That's
 why it is so deadly. That's why I dislike driving a car. It's not because I'm
 afraid of an accident, it is just because it feels so unnatural and unpleasant.
 From a user experience perspective, driving a car in traffic is miserable. Worse
-yet, that miserable and frustrating human experience is usually the cause of 
+yet, that miserable and frustrating human experience is usually the cause of
 traffic in the first place.
 
-Computers are far more well suited to drive amongst other human drivers, and even
+Computers are far more well suited to drive amongst other human drivers and even
 more well suited to drive amongst only other autonomous cars. In the best case
 scenario, cars would be cooperate in both a distributed and centralized way.
 Distributed in the sense that each car would be responsible for its own safety,
@@ -41,7 +41,7 @@ ride sharing, Google Maps for dynamic routing based on conditions.
 I refuse to buy a car until I can afford one that is at least partially
 autonomous. If I'm going to sink six months of salary into a device that carries
 me around, the last thing I want is to be responsible for driving it all the
-time. When I'm on the open road, I'll take over just for fun.
+time. I'll only take over driving on the open road for fun and speed.
 
 I hope that in my lifetime, human driving will be banned in densely populated
 areas. If I wait that long, there probably won't be any practical reason to buy
