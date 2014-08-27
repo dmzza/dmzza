@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "Why I Refuse to Buy a Car"
+date:   2014-08-26 19:30:00
+categories: blog
+thumbnail: "/img/Clarion Music Society 2.png"
+youtube: "rld0KDcan_w"
+---
+
+> The earth probably sees plastic as just another one of its children. Could be
+> the only reason the earth allowed us to be spawned from it in the first place.
+> It wanted plastic for itself.
+>
+> George Carlin
+
+I have two road bikes, one for myself, and another in case a friend wants to
+ride with me. I see a lot of bikes with the sticker "one less car" which I think
+is bullshit. It assumes that the rider would otherwise require a car to get where
+she needs to go. The reason I ride a bike is because it is more enjoyable than
+driving, and it is the human body and brain is well suited for it. Whenever I
+need to drive a car in the city, I constantly think about how I would rather
+be biking. For me, riding a bike has nothing to do with saving the environment
+or reducing congestion. It is an entirely selfish desire. If riding a bike had
+an even worse environmental impact than driving a car, I would still do it.
+
+Humans are not well suited for driving a car when other cars are around. That's
+why it is so deadly. That's why I dislike driving a car. It's not because I'm
+afraid of an accident, it is just because it feels so unnatural and unpleasant.
+From a user experience perspective, driving a car in traffic is miserable. It is
+a self-perpetuating misery, because traffic only exists because we are forced to
+drive our own cars.
+
+Computers are far more well suited to drive amongst other human drivers, and even
+more well suited to drive amongst only other autonomous cars. In the best case
+scenario, cars would be cooperate in both a distributed and centralized way.
+Distributed in the sense that each car would be responsible for its own safety,
+but it could communicate information to nearby cars that humans could never
+communicate. Centralized systems already exist like traffic reporting, Uber for
+ride sharing, Google Maps for dynamic routing based on conditions.
+
+I refuse to buy a car until I can afford one that is at least partially
+autonomous. If I'm going to sink six months of salary into a device that carries
+me around, the last thing I want is to be responsible for driving it all the
+time. When I'm on the open road, I'll take over just for fun.
+
+I hope that in my lifetime, human driving will be banned in densely populated
+areas. If I wait that long, there probably won't be any practical reason to buy
+a car, because the cost of commuting in a driverless Uber could drop below the
+cost of owning or leasing a car.
