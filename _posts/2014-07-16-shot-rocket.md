@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Shot Rocket"
-date:   2014-07-16 00:00:00
+date:   2014-07-16 12:00:00
 categories: portfolio icon
 thumbnail: "/img/Shot Rocket Icon.png"
 hero: "/img/Shot Rocket Icon@2x.png"
