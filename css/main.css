@@ -30,8 +30,21 @@ h2 {
   text-align: center;
 }
 
-p, li {
-  font-family: Helvetica, Arial, sans-serif;
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size:1.2em;
+  line-height: 1.8;
+  letter-spacing: 0.4px;
+}
+
+li {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+blockquote p {
+  line-height: 1.5;
+  letter-spacing: 0.6px;
 }
 
 a         { color: #D0011B; text-decoration: none; }
