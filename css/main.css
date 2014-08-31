@@ -91,7 +91,7 @@ img {
 
 .logo svg {
 
-  background: #F8F8F8 url("https://pbs.twimg.com/profile_images/492402480672567296/uyOK2mDl_400x400.jpeg") no-repeat 800px center;
+  background: #F8F8F8 url("http://i.imgur.com/fASrn7F.jpg") no-repeat 800px center;
   background-size:cover;
   border-radius:200px;
   max-width:200px;
@@ -108,7 +108,7 @@ img {
 }
 
 .logo:hover svg {
-  background: #F8F8F8 url("https://pbs.twimg.com/profile_images/492402480672567296/uyOK2mDl_400x400.jpeg") no-repeat center 0px;
+  background: #F8F8F8 url("http://i.imgur.com/fASrn7F.jpg") no-repeat center 0px;
   background-size:cover;
 }
 
