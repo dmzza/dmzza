@@ -4,6 +4,9 @@ layout: default
 
 <div class="home">
 
+  {% include portfolio.html %}
+
+  <h2>Blog</h2>
   {% for post in site.categories.blog limit:1 %}
     <div class="post-header">
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}#hero">
@@ -14,8 +17,5 @@ layout: default
       </a>
     </div>
   {% endfor %}
-
-  <h2>Portfolio</h2>
-  {% include portfolio.html %}
 
 </div>
