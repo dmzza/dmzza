@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>David Mazza Summarized</title>
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <style type="text/css">
     * {
       font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
@@ -112,7 +112,7 @@
       -webkit-transition: all 0.2s linear;
     }
     .card:hover {
-      background-color: #40E6B7;
+      background-color: #A563EC;
       color: #FFF;
     }
     .card:hover a {
@@ -126,15 +126,24 @@
       width: 100%;
       text-align: center;
     }
+    .surprise a {
+      margin: auto 7px;
+      text-decoration:none;
+    }
     .surprise a i {
       text-decoration: none;
-      font-size: 72px;
       color: #CCC;
       transition: color 0.2s linear;
       -webkit-transition: color 0.2s linear;
     }
+    .surprise a span i {
+      margin:-16px 0 0 -3px;
+    }
+    .surprise a i.fa-inverse, .surprise a:hover i.fa-inverse {
+      color: #eee;
+    }
     .surprise a:hover i {
-      color: #222;
+      color: #A563EC;
     }
 
   </style>
@@ -191,19 +200,30 @@
 </div>
 
 <footer>
-  <a class="card" href="mailto:writeme@dmzza.com">
-    writeme@dmzza.com
+  <a class="card" href="mailto:davidedwardmazza@gmail.com">
+    davidedwardmazza@gmail.com
   </a>
   <a class="card" href="tel://1-347-675-0612">
     347-675-0612
   </a>
-  <a class="card" href="http://davidmazza.com">
-    http://davidmazza.com
+  <a class="card" href="http://www.davidmazza.com">
+    www.davidmazza.com
   </a>
 </footer>
 
 <div class="surprise">
-  <a href="http://github.com/dmzza"><i class="icon-github-sign"></i></a>
+  <a href="http://dribbble.com/dmazza">
+    <i class="fa fa-dribbble fa-4x"></i>
+  </a>
+  <a href="http://github.com/dmzza">
+    <i class="fa fa-github fa-4x"></i>
+  </a>
+  <a href="http://instagram.com/dmzza">
+    <span class="fa-stack fa-2x">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+    </span>
+  </a>
 </div>
 </body>
 </html>
