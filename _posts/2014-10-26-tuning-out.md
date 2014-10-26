@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tuning Out"
-date:   2014-10-11 23:45:00
+date:   2014-10-26 04:30:00
 categories: blog
 thumbnail: "/img/Tune Out Prototype.png"
 hero: "/img/Tune Out Prototype@2x.png"
