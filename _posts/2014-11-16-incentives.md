@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  ""
-date:   2014-10-25 04:30:00
-categories: blog
+title:  "Incentives"
+date:   2014-11-16 04:30:00
+categories: draft
 thumbnail: "/img/Tune Out 1.2 thumbnail.png"
 realpixels: "/img/Tune Out Pixels.png"
 ---
-<!-- This should actually be a new unpublished post. I don't have a way to specify that yet -->
+
 My goal is to make one dollar in profit by the end of the 2014. Note that I don't count my time as an expense. I also don't think of normal costs of doing business like the Apple Developer annual fee as an expense, because it is necessary to be in my line of work at all. An expense would be something like running ads or paying for a server specifically for a side project.
 
 Tune Out looks like the best candidate to achieve this goal with. It has a super-niche market to start with, but I can address any market generally, and then launch in a specific market if there is demand. It has a monopoly in this market as far as I know. There is no other app that will tell you exactly when to wake up for your stop on the L train in New York City. Likewise for BART if and when I launch in San Francisco.
