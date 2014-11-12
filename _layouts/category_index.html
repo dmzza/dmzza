@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h2>{{ page.category }}</h2>
+  {% for category in site.categories %}{% if category[0] == page.category %}
+  {% for post in category[1] %}
+    <div class="post-header">
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}#hero">
+        {% if post.thumbnail %}
+          <img src="{{ post.thumbnail | prepend: site.baseurl }}" class="img-responsive">
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+      </a>
+    </div>
+  {% endfor %}{% endif %}{% endfor %}
+
+</div>
