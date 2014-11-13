@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Thoughts About Making Money with Ads"
-date:   2014-10-26 04:30:00
+date:   2014-10-26 14:30:00
 categories: blog
 thumbnail: "/img/Tune Out 1.2 thumbnail.png"
 realpixels: "/img/Tune Out Pixels.png"
@@ -25,23 +25,4 @@ If you happen to live in Brooklyn along the L train, [Tune Out 1.1](https://itun
 
 ### Sign up for the Beta
 
-<!-- Begin MailChimp Signup Form -->
-<div id="mc_embed_signup" class="row">
-  <form action="//peaking.us9.list-manage.com/subscribe/post?u=383d429877be447f12993bd1b&amp;id=cc28d59555" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate col-lg-6 panel panel-default" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll" class="panel-body">
-      <p>Tune Out Beta</p>
-    	<div id="mce-responses">
-    		<div class="response" id="mce-error-response" style="display:none"></div>
-    		<div class="response" id="mce-success-response" style="display:none"></div>
-    	</div>
-      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-      <div style="position: absolute; left: -5000px;"><input type="text" name="b_383d429877be447f12993bd1b_cc28d59555" tabindex="-1" value=""></div>
-      <div class="input-group">
-        <input type="email" value="" placeholder="name@email.com" name="EMAIL" class="required email form-control" id="mce-EMAIL">
-        <span class="input-group-btn"><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary"></span>
-      </div>
-      <p>Powered by <a href="http://eepurl.com/6LFLH" title="MailChimp - email marketing made easy and fun">MailChimp</a></p>
-    </div>
-  </form>
-
-</div>
+{% include tune-out-list.html %}
