@@ -1,3 +1,4 @@
+<a href="fleksy://store/inventory">Get Inventory</a>
 
 <h1>Buy Boxes</h1>
 <a href="fleksy://store/boxes/box1/purchase">Frozen</a>
@@ -17,7 +18,9 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
 $(function() {
-  $.ajax("fleksy://store/inventory");
+  $.ajax("fleksy://store/inventory").fail(function(something, status, errorMsg) {
+    alert(errorMsg);
+  });
 });
 
 var inventoryCallback = function(inventoryString) {
