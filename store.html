@@ -20,9 +20,12 @@ $(function() {
   $.ajax("fleksy://store/inventory");
 });
 
-var inventoryCallback = function(inventory) {
-  if(inventory) {
+var inventoryCallback = function(inventoryString) {
+  if(inventoryString) {
+    var inventory = JSON.parse(inventoryString);
     $("form").after(inventory.box0001);
+  } else {
+    alert('missing inventory string');
   }
 };
 </script>
