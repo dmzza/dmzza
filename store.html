@@ -19,7 +19,7 @@
 <script type="text/javascript">
 $(function() {
   $.ajax("fleksy://store/inventory").fail(function(something, status, errorMsg) {
-    alert(errorMsg);
+    alert("bad " + something + " " + status + " " + errorMsg);
   });
 });
 
