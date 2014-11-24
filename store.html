@@ -12,3 +12,17 @@
 <input type="text" name="activeExtensions" value="['extension1','extension2','extension3']"></input>
 <input type="submit"></input>
 </form>
+
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+$(function() {
+  $.ajax("fleksy://store/inventory");
+});
+
+var inventoryCallback = function(inventory) {
+  if(inventory) {
+    $("form").after(inventory.box0001);
+  }
+};
+</script>
