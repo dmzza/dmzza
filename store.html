@@ -27,8 +27,8 @@ var inventoryCallback = function(inventoryString) {
 };
 
 $(function() {
-  alert('hello');
-  window.webkit.messageHandlers.inventory.postMessage();
-  alert('goodbye');
+  $("form").after('hello');
+  window.webkit.messageHandlers.inventory.postMessage("get");
+  $("form").after('goodbye');
 });
 </script>
