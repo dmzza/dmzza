@@ -19,7 +19,7 @@
 <script type="text/javascript">
 var inventoryCallback = function(inventoryString) {
   if(inventoryString) {
-    var inventory = JSON.parse(inventoryString);
+    //var inventory = JSON.parse(inventoryString);
     $("form").after(inventoryString);
   } else {
     alert('missing inventory string');
