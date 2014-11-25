@@ -18,13 +18,13 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
 
-var inventoryCallback = function(inventoryString) {
-  if(inventoryString) {
+var inventoryCallback = function(inventoryObject) {
+  //if(inventoryObject != nil) {
     //var inventory = JSON.parse(inventoryString);
-    $("form").after(inventoryString);
-  } else {
-    $("form").after('missing inventory string');
-  }
+    $("form").after(inventoryString.box0001.kind_of_box);
+  //} else {
+  //  $("form").after('missing inventory string');
+  //}
 };
 
 $(function() {
