@@ -18,9 +18,7 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
 $(function() {
-  $.ajax("http://store.fleksy/inventory").fail(function(something, status, errorMsg) {
-    alert("bad " + something + " " + status + " " + errorMsg);
-  });
+  window.webkit.messageHandlers.inventory.postMessage();
 });
 
 var inventoryCallback = function(inventoryString) {
