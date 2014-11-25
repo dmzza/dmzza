@@ -18,11 +18,6 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
 $(function() {
-  $("form").after('hello');
-  window.webkit.messageHandlers.inventory.postMessage("get");
-  $("form").after('goodbye');
-
-
   var inventoryCallback = function(inventoryString) {
     if(inventoryString) {
       //var inventory = JSON.parse(inventoryString);
@@ -31,5 +26,9 @@ $(function() {
       $("form").after('missing inventory string');
     }
   };
+  
+  $("form").after('hello');
+  window.webkit.messageHandlers.inventory.postMessage("get");
+  $("form").after('goodbye');
 });
 </script>
