@@ -17,10 +17,6 @@
 
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
-$(function() {
-  window.webkit.messageHandlers.inventory.postMessage();
-});
-
 var inventoryCallback = function(inventoryString) {
   if(inventoryString) {
     var inventory = JSON.parse(inventoryString);
@@ -29,4 +25,10 @@ var inventoryCallback = function(inventoryString) {
     alert('missing inventory string');
   }
 };
+
+$(function() {
+  alert('hello');
+  window.webkit.messageHandlers.inventory.postMessage();
+  alert('goodbye');
+});
 </script>
