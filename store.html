@@ -17,18 +17,19 @@
 
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
-var inventoryCallback = function(inventoryString) {
-  if(inventoryString) {
-    //var inventory = JSON.parse(inventoryString);
-    $("form").after(inventoryString);
-  } else {
-    alert('missing inventory string');
-  }
-};
-
 $(function() {
   $("form").after('hello');
   window.webkit.messageHandlers.inventory.postMessage("get");
   $("form").after('goodbye');
+
+
+  var inventoryCallback = function(inventoryString) {
+    if(inventoryString) {
+      //var inventory = JSON.parse(inventoryString);
+      $("form").after(inventoryString);
+    } else {
+      alert('missing inventory string');
+    }
+  };
 });
 </script>
