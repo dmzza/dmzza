@@ -34,8 +34,6 @@ var setExtensionsCallback = function(keys, result) {
 };
 
 $(function() {
-
-
   $("form").after('hello');
   window.webkit.messageHandlers.inventory.postMessage("get");
   $("form").after('goodbye');
