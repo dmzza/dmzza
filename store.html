@@ -9,10 +9,10 @@
 <a href="fleksy://store/themes/Vibrant%20Depth/select">Vibrant Depth</a>
 
 <h1>Set Extensions</h1>
-<a href="javascript:window.webkit.messageHandlers.xtras.postMessage({active_extensions: ['extension1', 'extension2', 'extension3']})">Ext 1, 2, 3</a>
-<a href="javascript:window.webkit.messageHandlers.xtras.postMessage({active_extensions: ['extension3', 'extension1']})">Ext 3, 1</a>
+<a href="javascript:window.webkit.messageHandlers.xtras.postMessage({active_extensions: ['oneHanded', 'editor', 'numbersRow']})">One Handed, Editor, Numbers</a>
+<a href="javascript:window.webkit.messageHandlers.xtras.postMessage({active_extensions: ['rainbowKeys', 'oneHanded']})">Rainbow, One Handed</a>
 <form method="POST" action="fleksy://store/xtras/">
-<input type="text" name="activeExtensions" value="['extension1','extension2','extension3']"></input>
+<input type="text" id="activeExtensions" value="['oneHanded', 'editor', 'numbersRow']"></input>
 <input type="submit"></input>
 </form>
 
@@ -30,7 +30,7 @@ var inventoryCallback = function(inventoryObject) {
 };
 
 var setExtensionsCallback = function(keys, result) {
-  $("form").after(result);
+  $("#activeExtensions").val(keys.toString());
 };
 
 $(function() {
