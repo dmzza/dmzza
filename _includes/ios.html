@@ -1,11 +1,11 @@
 <div class="posts row">
-  {% for post in site.categories.portfolio %}
-    <div class="col-sm-8 col-xs-12">
+  {% for post in site.categories.ios %}
+    <div class="col-lg-9 col-sm-8 col-xs-12">
       <div class="visible-xs">
         <h1>{{ post.title }}</h1>
       </div>
       <div style="overflow-x:scroll; overflow-y: hidden;">
-        <div class="row" style="width:860px;">
+        <div class="row" style="min-width:860px; max-height:568px;">
           {% if post.thumbnail %}
             <img class="col-xs-4" src="https://placehold.it/320x568">
             <img class="col-xs-4" src="https://placehold.it/320x568">
@@ -22,7 +22,7 @@
         <a href="#"><img src="https://placehold.it/135x40"></a>
       </div>
     </div>
-    <div class="col-md-4 hidden-xs">
+    <div class="col-lg-3 col-sm-4 hidden-xs">
       <h1>{{ post.title }}</h1>
       <a href="#"><img src="https://placehold.it/135x40"></a>
     </div>
