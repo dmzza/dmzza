@@ -1,10 +1,10 @@
-<div class="posts row">
+<div class="posts">
   {% for post in site.categories.ios %}
-    <div class="col-xs-12">
-      <div class="visible-xs">
+    <div class="row">
+      <div class="col-xs-12 visible-xs">
         <h1>{{ post.title }}</h1>
       </div>
-      <div style="overflow-x:scroll; overflow-y: hidden;">
+      <div style="col-xs-12 overflow-x:scroll; overflow-y: hidden;">
         <div class="row" style="min-width:768px; max-height:568px;">
           {% if post.thumbnail %}
             <img class="col-sm-3 col-xs-4" src="https://placehold.it/320x568">
@@ -20,15 +20,12 @@
 
         </div>
       </div>
-      <div class="row">
-        <p class="col-sm-9 col-xs-12">
-          Flexitarian pickled brooklyn fanny pack gastropub, before they sold out distillery farm-to-table four dollar toast fingerstache put a bird on it banh mi stumptown. Bushwick austin.
-        </p>
-      </div>
-      <div class="visible-xs">
         <a href="#"><img src="https://placehold.it/135x40"></a>
+      <p class="col-sm-9 col-xs-12">
+        Flexitarian pickled brooklyn fanny pack gastropub, before they sold out distillery farm-to-table four dollar toast fingerstache put a bird on it banh mi stumptown. Bushwick austin.
+      </p>
+      <div class="col-xs-12 visible-xs">
       </div>
     </div>
-
   {% endfor %}
 </div>
