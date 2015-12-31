@@ -4,15 +4,16 @@
       <div class="visible-xs">
         <h1>{{ post.title }}</h1>
       </div>
-      <div class="row">
-        {% if post.thumbnail %}
-          <img class="col-sm-4 col-xs-8" src="https://placehold.it/320x568" class="img-responsive">
-          <img class="col-sm-4 col-xs-8" src="https://placehold.it/320x568" class="img-responsive">
-          <img class="col-sm-4 col-xs-8" src="https://placehold.it/320x568" class="img-responsive">
-        {% else %}
-          <img class="col-sm-4 col-xs-8" src="" class="img-responsive blank">
-        {% endif %}
-
+      <div style="overflow-x:scroll; overflow-y: hidden;">
+        <div class="row" style="width:860px;">
+          {% if post.thumbnail %}
+            <img class="col-xs-4" src="https://placehold.it/320x568">
+            <img class="col-xs-4" src="https://placehold.it/320x568">
+            <img class="col-xs-4" src="https://placehold.it/320x568">
+          {% else %}
+            <img class="col-xs-4" src="" class="img-responsive blank">
+          {% endif %}
+        </div>
       </div>
       <p>
         Flexitarian pickled brooklyn fanny pack gastropub, before they sold out distillery farm-to-table four dollar toast fingerstache put a bird on it banh mi stumptown. Bushwick austin.
