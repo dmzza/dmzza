@@ -69,7 +69,7 @@ img {
 .wrap:after { content:""; display:table; }
 .wrap:after { clear: both; }
 .wrap {
-  max-width: 1400px;
+  max-width: 850px;
   padding: 0 30px;
   margin: 0 auto;
   zoom: 1;
@@ -226,7 +226,7 @@ img {
 
 .posts {
   list-style-type: none;
-  background-color: #FEFEFE;
+  /*background-color: #FEFEFE;*/
 }
 
 .posts li {
