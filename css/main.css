@@ -224,7 +224,10 @@ img {
 
 .home h1 { margin-bottom: 25px; }
 
-.posts { list-style-type: none; }
+.posts {
+  list-style-type: none;
+  background-color: #FEFEFE;
+}
 
 .posts li {
   margin-bottom: 30px;
@@ -251,8 +254,15 @@ img {
   color: #818181;
 }
 
+.posts .dm-scrollable {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin:0px 0px 0px -15px;
+}
+
 .posts > .row {
   margin: 90px 0px;
+  padding: 15px 0px 30px 15px;
 }
 
 .posts p {
