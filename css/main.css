@@ -251,6 +251,14 @@ img {
   color: #818181;
 }
 
+.posts > .row {
+  margin: 90px 0px;
+}
+
+.posts p {
+  display: block;
+  margin-top: 20px;
+}
 
 /* Post styles */
 /* ----------------------------------------------------------*/
