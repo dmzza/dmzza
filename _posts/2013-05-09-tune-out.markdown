@@ -3,7 +3,11 @@ layout: post
 title:  "Tune Out"
 date:   2013-05-09 12:00:00
 categories: portfolio ios
+app-store: "http://appstore.com/TuneOutLTrainSubwayNyc"
 thumbnail: "/img/Tune Out Prototype.png"
+thumbnail-1: "/img/Tune Out Pixels.png"
+thumbnail-2: "/img/Tune Out Pixels.png"
+thumbnail-3: "/img/Tune Out Pixels.png"
 hero: "/img/Tune Out Prototype@2x.png"
 realpixels: "/img/Tune Out Pixels.png"
 ---
