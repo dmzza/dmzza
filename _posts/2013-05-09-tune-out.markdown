@@ -12,12 +12,4 @@ hero: "/img/Tune Out Prototype@2x.png"
 realpixels: "/img/Tune Out Pixels.png"
 ---
 
-Tune Out is a nifty lifehack for the subway. It will alert you when your stop is approaching so that you can focus on reading, napping, gaming, doodling, and daydreaming while you ride.
-
-### Goals
-This is a mockup for a future version of the app. Estimated arrival times for approaching trains make it easy to visualize how much time you have to catch the next train.
-
-### Role
-I designed, implemented and released the initial version in 2013. Designed on paper and in Xcode, and written in Objective C. This mockup was designed in Sketch.
-
-### [Available on the App Store](https://itunes.apple.com/us/app/tune-out-l-train-subway-nyc/id644130884?mt=8)
+Tune Out is a nifty lifehack for the subway. It buzzes you when you stop is coming in case you aren't paying attention. 
