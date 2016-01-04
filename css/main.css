@@ -38,12 +38,22 @@ h2 {
   text-align: center;
 }
 
-p, input {
+p, input, blockquote, figcaption {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size:1.2em;
   line-height: 1.8;
   letter-spacing: 0.4px;
+}
+
+blockquote {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+figcaption {
+  font-size: 0.8em;
+  text-align: center;
 }
 
 li {

@@ -6,8 +6,11 @@ categories: portfolio ios
 app-store: "http://appstore.com/TuneOutLTrainSubwayNyc"
 thumbnail: "/img/Tune Out Prototype.png"
 thumbnail-1: "/img/Tune Out Pixels.png"
+caption-1: ""
 thumbnail-2: "/img/Tune Out Pixels.png"
+caption-2: ""
 thumbnail-3: "/img/Tune Out Pixels.png"
+caption-3: ""
 hero: "/img/Tune Out Prototype@2x.png"
 realpixels: "/img/Tune Out Pixels.png"
 ---

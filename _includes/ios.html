@@ -7,9 +7,18 @@
       <div class="dm-scrollable">
         <div class="row" style="min-width:768px; max-height:568px; margin: 15px 0px 0px 0px;">
           {% if post.thumbnail %}
-            <img class="col-sm-3 col-xs-4" src="{{ post.thumbnail-1 | prepend: site.baseurl }}">
-            <img class="col-sm-3 col-xs-4" src="{{ post.thumbnail-2 | prepend: site.baseurl }}">
-            <img class="col-sm-3 col-xs-4" src="{{ post.thumbnail-3 | prepend: site.baseurl }}">
+          <figure class="col-sm-3 col-xs-4">
+            <img src="{{ post.thumbnail-1 | prepend: site.baseurl }}" class="img-responsive">
+            <figcaption>{{ post.caption-1 }}</figcaption>
+          </figure>
+          <figure class="col-sm-3 col-xs-4">
+            <img src="{{ post.thumbnail-2 | prepend: site.baseurl }}" class="img-responsive">
+            <figcaption>{{ post.caption-2 }}</figcaption>
+          </figure>
+          <figure class="col-sm-3 col-xs-4">
+            <img src="{{ post.thumbnail-3 | prepend: site.baseurl }}" class="img-responsive">
+            <figcaption>{{ post.caption-3 }}</figcaption>
+          </figure>
           {% else %}
             <img class="col-sm-3 col-xs-4" src="" class="img-responsive blank">
           {% endif %}
