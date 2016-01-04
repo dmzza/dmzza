@@ -15,4 +15,4 @@ hero: "/img/Tune Out Prototype@2x.png"
 realpixels: "/img/Tune Out Pixels.png"
 ---
 
-Tune Out is a nifty lifehack for the subway. It buzzes you when you stop is coming in case you aren't paying attention. 
+Tune Out is a nifty lifehack for the subway. It buzzes you when you stop is coming in case you aren't paying attention.
