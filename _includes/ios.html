@@ -1,8 +1,8 @@
 <div class="posts">
-  {% for post in site.categories.ios %}
+  {% for post in site.categories.startup %}
     <div class="row">
       <div class="col-xs-12 visible-xs">
-        <h1>{{ post.title }}</h1>
+        <h3>{{ post.title }}</h3>
       </div>
       <div class="dm-scrollable">
         <div class="row" style="min-width:768px; max-height:568px; margin: 15px 0px 0px 0px;">
@@ -23,7 +23,7 @@
             <img class="col-sm-3 col-xs-4" src="" class="img-responsive blank">
           {% endif %}
           <div class="col-sm-3 hidden-xs">
-            <h1>{{ post.title }}</h1>
+            <h3>{{ post.title }}</h3>
             <a href="{{ post.app-store }}" target="_blank"><img src="/img/app-store.svg"></a>
           </div>
 
