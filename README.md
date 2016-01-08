@@ -16,3 +16,11 @@
 ## Recognition
  - Elevate: App of the Year 2014, featured in Best New Apps multple times
  - Fleksy: Featured in Best New Apps multiple times
+
+```
+contact
+
+I build iPhone apps in San Francisco
+and I'm available for remote work.
+dmzza+hire@me.com
+```
