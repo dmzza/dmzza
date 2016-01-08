@@ -123,26 +123,28 @@ img {
 }
 
 .logo svg {
-
-  background: #F8F8F8 url("http://i.imgur.com/fASrn7F.jpg") no-repeat 800px center;
-  background-size:cover;
+  background-color: #F8F8F8;
+  background-image: url("/img/face.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 1% 1%;
   border-radius:200px;
   max-width:200px;
-  transition: background 0.5s;
+  transition: background 0.3s;
 }
 
 .logo svg>g {
   transition: transform 0.3s;
-  transform: translate(0, 0);
+  transform: scale(1.0, 1.0);
+  transform-origin: 50% 50%;
 }
 
 .logo:hover svg>g {
-  transform: translate(-125%, 0);
+  transform: scale(40.0, 40.0);
 }
 
 .logo:hover svg {
-  background: #F8F8F8 url("http://i.imgur.com/fASrn7F.jpg") no-repeat center 0px;
-  background-size:cover;
+  background-size:100% 100%;
 }
 
 .site-title,
