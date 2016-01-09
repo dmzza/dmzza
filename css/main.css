@@ -18,8 +18,16 @@ body {
 
 section {
   max-width: 800px;
-  margin:50px auto 150px auto;
+  margin:50px auto;
   padding: 25px;
+}
+
+.section-header {
+  width:100%;
+  background-color: purple;
+  color:white;
+  margin:200px 0 50px 0;
+  padding: 50px 0 1px 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,11 +38,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-family: "SF UI Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 2em;
+  font-weight: 300;
+  font-size: 1.1em;
   text-align: center;
   text-transform: uppercase;
-  color: #333;
 }
 
 h2 {
