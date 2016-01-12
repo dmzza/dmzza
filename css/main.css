@@ -264,6 +264,36 @@ img {
   margin-bottom: 35px;
 }
 
+.app-icons {
+  background-color: rgb(249, 247, 233);
+  height: 1500px;
+}
+
+.app-icons .row {
+  z-index: 1;
+  position: absolute;
+}
+
+.app-icons .home>img {
+  position: absolute;
+  margin-left: -400px;
+  transition-timing-function: linear;
+  transition-duration: 30s;
+  /*transition: transform;*/
+  transform: rotateZ(0deg);
+  z-index: auto;
+}
+
+.app-icons:hover .home>img {
+
+  transform: rotateZ(-90deg);
+  transform-origin: center;
+}
+
+.app-icons .row>div {
+  padding-bottom: 30px;
+}
+
 .posts {
   list-style-type: none;
   /*background-color: #FEFEFE;*/
