@@ -414,8 +414,7 @@ img {
 .post pre.terminal code { background-color: #333; }
 
 img.blank { content:url("../img/blank.png"); }
-
-img.img-responsive { background-color:#eee; }
+img.img-opaque { background-color:#eee; }
 
 /* Syntax highlighting styles */
 /* ----------------------------------------------------------*/

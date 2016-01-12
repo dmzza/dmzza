@@ -4,7 +4,7 @@
       <!--<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>-->
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}#hero">
         {% if post.thumbnail %}
-          <img src="{{ post.thumbnail | prepend: site.baseurl }}" class="img-responsive">
+          <img src="{{ post.thumbnail | prepend: site.baseurl }}" class="img-responsive img-opaque">
         {% else %}
           <img src="" class="img-responsive blank">
         {% endif %}
