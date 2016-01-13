@@ -266,7 +266,7 @@ img {
 
 .app-icons {
   background-color: rgb(249, 247, 233);
-  height: 1500px;
+  height: 800px;
 }
 
 .app-icons .row {
@@ -276,12 +276,13 @@ img {
 
 .app-icons .home>img {
   position: absolute;
-  margin-left: -400px;
+  margin-left: -25%;
   transition-timing-function: linear;
   transition-duration: 30s;
   /*transition: transform;*/
   transform: rotateZ(0deg);
   z-index: auto;
+  width:50%;
 }
 
 .app-icons:hover .home>img {
