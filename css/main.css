@@ -264,6 +264,10 @@ img {
   margin-bottom: 35px;
 }
 
+.section-header .idea {
+  font-weight: 700;
+}
+
 .app-icons {
   background-color: rgb(249, 247, 233);
   height: 800px;
