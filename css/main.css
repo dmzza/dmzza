@@ -30,6 +30,12 @@ section {
   padding: 50px 0 1px 0;
 }
 
+.light-content {
+  background-color: #333;
+  color:white;
+  padding:200px 0; margin:100px 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
   font-family: Helvetica, Arial, sans-serif;
@@ -270,7 +276,7 @@ img {
 
 .app-icons {
   background-color: rgb(249, 247, 233);
-  height: 800px;
+  height: 900px;
 }
 
 .app-icons .row {
