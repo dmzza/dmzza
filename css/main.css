@@ -290,8 +290,8 @@ img {
   transform-origin: center;
 }
 
-.app-icons .row>div {
-  padding-bottom: 30px;
+.app-icons figure {
+  padding:25px 4%;
 }
 
 .posts {
