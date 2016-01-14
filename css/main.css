@@ -120,9 +120,9 @@ img {
 /* Site header */
 
 .site-header {
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid #FFF;
   min-height: 56px;
-  background-color: #E8E8E8;
+  background-color: #FFF;
 }
 
 .logo {
@@ -136,28 +136,28 @@ img {
 }
 
 .logo svg {
-  background-color: #F8F8F8;
-  background-image: url("/img/face.png");
+  background-color: rgb(249, 247, 233);
+  background-image: url("/img/roundpixel.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 1% 1%;
   border-radius:200px;
   max-width:200px;
-  transition: background 0.3s;
+  transition: background 0.4s;
 }
 
 .logo svg>g {
-  transition: transform 0.3s;
+  transition: transform 0.5s;
   transform: scale(1.0, 1.0);
   transform-origin: 50% 50%;
 }
 
 .logo:hover svg>g {
-  transform: scale(40.0, 40.0);
+  transform: scale(80.0, 80.0);
 }
 
 .logo:hover svg {
-  background-size:100% 100%;
+  background-size:360% 360%;
 }
 
 .site-title,
