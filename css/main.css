@@ -305,6 +305,11 @@ img {
   padding:25px 4%;
 }
 
+.app-icons figure img {
+  border-radius: 20%;
+  width: 100%;
+}
+
 .posts {
   list-style-type: none;
   /*background-color: #FEFEFE;*/
