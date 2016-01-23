@@ -282,6 +282,8 @@ img {
 .app-icons .row {
   z-index: 1;
   position: absolute;
+  max-width:1600px;
+  margin:0 17% 0 6%;
 }
 
 .app-icons .home>img {
@@ -310,6 +312,15 @@ img {
   width: 100%;
 }
 
+.app-icons #iPhone {
+  height: 500px;
+}
+
+.app-icons #iPhone img {
+  right:0;
+  top:-80px;
+  position:absolute;
+}
 .posts {
   list-style-type: none;
   /*background-color: #FEFEFE;*/
@@ -531,7 +542,7 @@ img.img-opaque { background-color:#eee; }
 /* ----------------------------------------------------------*/
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
 
   .footer-col-1 { width: 50%; }
 
@@ -550,6 +561,9 @@ img.img-opaque { background-color:#eee; }
     clear: both;
   }
 
+  .app-icons .row {
+    margin:0 6%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -608,5 +622,4 @@ img.img-opaque { background-color:#eee; }
     clear: both;
     width: auto;
     margin: 0 0 15px; }
-
 }
