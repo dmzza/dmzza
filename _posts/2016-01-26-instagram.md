@@ -1,16 +1,40 @@
-# What does it take to start building Instagram?
+# Three simple features that are responsible for Instagram’s success
 
-Instagram is one of the most popular apps in the world, but it’s always been known for simplicity. They have said no to so many ideas in order to focus on the important stuff. To this day, they still don’t have an iPad app.
-The most important stuff can be reduced to a few basic components. Instagram would be nothing without the ability to take a photo. The original and lasting value of Instagram are their easy filters that enable anybody to take professional-looking snapshots. But it isn’t enough just to take a great photo, every photo you take is instantly published on your user profile. Like almost any app with user profiles, you can connect with other users by following them. This populates the most important tab in the app, the feed. 
+In 2012, before Instagram had any way of making money, Facebook purchased it for $1 billion. Instagram is arguably the most successful social network since Facebook itself. Facebook needed Instagram because it was the most popular place to share photos taken with the most popular camera in the world; the iPhone.
 
-## Taking a Photo
-Almost every photo app gets photos either directly from the camera or from photo albums. The iPhone makes it easy to built this feature in the simplest way. Once you have a photo, Instagram uploads it to their website for anyone to see. 
+Instagram’s filters and frames made it easy for anyone to take more expressive snapshots with the iPhone. Every photo you take is instantly published on your user profile and fed to anyone who follows you.
 
 ## User Profiles
-Everyone’s first experience with Instagram includes creating a user profile when they sign up. Instagram makes it simple. You just need a photo, username and a description to complete your profile. The majority of space on your profile is consumed by your gallery of Instagram photos. 
+Your journey with Instagram starts with a super simple profile. All that’s required, is a photo, username and a description to complete your account. The majority of space on your profile is consumed by your gallery of Instagram photos.
 
 ## Feed
-Most users will spend far more time browsing their feed than posting new photos. Everybody came for the filters, but we stay for the feed. They have stuck with a feed design that isn’t far from what you might build in a prototype of Instagram. One photo at a time scrolling down in reverse-chronological order. 
+We came for the filters, but we stay for the feed.
+Most users will spend far more time browsing their feed than posting new photos. They have stuck with a simple feed design that isn’t far from what you might build in a prototype. One photo at a time scrolling down in reverse-chronological order. (+hearts)
 
-# How long would it take to build the first version of an app like Instagram?
-If I were building Instagram, I would start by focusing on those three critical features. I would start very simply by using the built-in interface for taking or importing photos. I would build the server software to store photos, user profiles, and to compile each user’s feed. This could be done in 5-7 days. Next I would focus on a simple way for users to sign up and create a user profile. Between design and development, this would take about 10-15 days. The quality of the sign up process determines what percentage of people will actually begin using the app, so it is a crucial part to spend time on. Finally, I would link the server and the app and load the feed of photos on the primary screen of the app when it first opens. 
+## Taking a Photo
+There are hundreds of apps that will filter and frame your photos, but Instagram made a subtle tweak to compel even timid users to share every photo to the feed. Whether you use it as a camera or an editor, the result isn’t saved to your device until you publish it on your profile.
+
+# David Mazza Section 
+I don’t just admire great success stories, I had the opportunity to take charge of Apple’s App of the Year, Elevate Brain Training. Which entails scoping, ideation and building the first prototype of the app.
+
+# Instagram in 30 days
+If the founder of Instagram had come to me with a thirty day budget to build the first version of Instagram, I would have started by focusing on those three critical features. 
+—
+Filtering & Framing Photos, storing them in the cloud
+> 5-7 days
+
+—
+Creating and Following User Profiles
+
+The quality of the sign up process determines what percentage of people will actually begin using the app, so it is a crucial part to spend time on. 
+> 10-15 days
+
+—
+
+The Feed, Hearts and Comments
+> 3-5 Days
+
+
+### Budget
+Assuming another 3-5 days spent going back and forth with design ideas for critical pieces of the interface, the first working version could be shipped in less than 30 days, which works out to $15k.
+
