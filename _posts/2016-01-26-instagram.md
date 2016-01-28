@@ -4,7 +4,7 @@ title:  "Three simple features that are responsible for Instagram's success"
 date: 2016-01-26 14:30:00
 categories: blog
 thumbnail: "/img/Tune Out 1.2 thumbnail.png"
-youtube: "https://www.youtube.com/watch?v=zvR95H9bzaU"
+youtube: "zvR95H9bzaU"
 ---
 
 In 2012, before Instagram had any way of making money, Facebook purchased it for $1 billion. Facebook needed Instagram because it was the most popular place to share photos taken with the most popular camera in the world; the iPhone. Instagram is arguably the most successful social network since Facebook itself.
