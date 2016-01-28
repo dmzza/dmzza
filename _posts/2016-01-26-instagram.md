@@ -20,15 +20,17 @@ I don’t just admire great success stories, I had the opportunity to take charg
 # Instagram in 30 days
 If the founder of Instagram had come to me with a thirty day budget to build the first version of Instagram, I would have started by focusing on those three critical features. 
 —
-Filtering & Framing Photos, storing them in the cloud
+
 > 5-7 days
 
-—
-Creating and Following User Profiles
+> Build the user interface for choosing a filter and a frame, and uploading it to the cloud
+>  
 
-The quality of the sign up process determines what percentage of people will actually begin using the app, so it is a crucial part to spend time on. 
+—
 > 10-15 days
 
+> The first impression created by the sign up process determines what percentage of people will begin using the app, so it is a crucial part to spend time on.
+> The on-boarding process would be designed to 
 —
 
 The Feed, Hearts and Comments
