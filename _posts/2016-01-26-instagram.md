@@ -1,4 +1,11 @@
-# Three simple features that are responsible for Instagram’s success
+---
+layout: post
+title:  "Three simple features that are responsible for Instagram's success"
+date: 2016-01-26 14:30:00
+categories: blog
+thumbnail: "/img/Tune Out 1.2 thumbnail.png"
+youtube: "https://www.youtube.com/watch?v=zvR95H9bzaU"
+---
 
 In 2012, before Instagram had any way of making money, Facebook purchased it for $1 billion. Facebook needed Instagram because it was the most popular place to share photos taken with the most popular camera in the world; the iPhone. Instagram is arguably the most successful social network since Facebook itself.
 
@@ -12,9 +19,9 @@ Instagram’s filters and frames made it easy for anyone to take more expressive
 Your journey with Instagram starts with a super simple profile. All that’s required is a photo, username and a description to complete your account. The majority of space on your profile is consumed by your gallery of Instagram photos.
 
 ### Feed
-Most users will spend far more time browsing their feed than posting new photos. They came for the filters but stayed for the feed. Instagram has stuck with a simple feed design that isn’t far from what you might build in a prototype. One photo at a time scrolling down in reverse-chronological order. 
+Most users will spend far more time browsing their feed than posting new photos. They came for the filters but stayed for the feed. Instagram has stuck with a simple feed design that isn’t far from what you might build in a prototype. One photo at a time scrolling down in reverse-chronological order.
 
-Hearts are an effortless way to appreciate people you follow. It gives people a reason to come back to their profile to see how many hearts each photo received. This virtuous cycle keeps people coming back to Instagram once they have a network of friends and interesting characters to keep up with. 
+Hearts are an effortless way to appreciate people you follow. It gives people a reason to come back to their profile to see how many hearts each photo received. This virtuous cycle keeps people coming back to Instagram once they have a network of friends and interesting characters to keep up with.
 
 ### Taking a Photo
 There are hundreds of apps that will filter and frame your photo, but Instagram compelled even timid users to share every photo to the feed with a subtle tweak: whether you use it as a camera or an editor, the result isn’t saved to your device until you publish it onto your profile.
@@ -33,4 +40,3 @@ The feed will keep users around, but it can also be very modest at first. I woul
 
 ### Budget
 Leaving room for some days spent going back and forth with design ideas for critical pieces of the interface, the first working version could be shipped in about 30 days, which works out to $15k. If you’re looking for someone to build the first version of your idea, shoot me an email.
-
