@@ -9,7 +9,7 @@
 html, body { height: 100%; }
 
 body {
-  font-family: "presicav", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next", "Futura", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
@@ -51,7 +51,7 @@ h1 {
 }
 
 h2 {
-  font-family: "presicav", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next", "Futura", Helvetica, Arial, sans-serif;
   font-size: 1.25em;
   color: #333;
   margin: 50px 0 20px 0;
@@ -165,16 +165,16 @@ img {
 .site-title:visited {
   display: block;
   color: #333;
-  font-size: 1.2em;
-  font-weight:400;
-  letter-spacing: 0.5px;
-  line-height: 56px;
+  font-size: 1.8em;
+  font-weight:600;
+  line-height: 220%;
   position: relative;
   z-index: 1;
   text-align:center;
   text-transform: uppercase;
-  max-width:200px;
+  text-decoration: none;
   margin: 0 auto;
+  margin-bottom: -3px;
 }
 
 .site-nav {
@@ -385,7 +385,7 @@ img {
 }
 
 .post-header .meta {
-  font-family: "presicav", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next", "Futura", Helvetica, Arial, sans-serif;
   font-size: 15px;
   color: #818181;
   margin-top: 5px;
