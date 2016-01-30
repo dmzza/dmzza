@@ -265,12 +265,16 @@ img {
 .home h1 { margin-bottom: 25px; }
 
 .idea {
-  font-family: "SF UI Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
   font-size: 3em;
   margin-bottom: 35px;
 }
 
 .section-header .idea {
+  font-weight: 600;
+}
+
+.section-header .idea small {
   font-weight: 700;
 }
 
