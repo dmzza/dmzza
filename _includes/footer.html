@@ -1,6 +1,29 @@
+
+
 <footer class="site-footer">
 
   <div class="wrap">
+
+    <form class="form-horizontal validate-form" accept-charset="UTF-8" action="https://formkeep.com/f/730a37b1c75a" method="POST">
+      <input type="hidden" name="utf8" value="✓">
+      <div class="form-group">
+        <label for="email" class="control-label col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-1 col-lg-offset-3">Your Email</label>
+        <div class="col-sm-6 col-md-4">
+          <input type="email" class="form-control" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]+" placeholder="reply@me.com">
+        </div>
+      </div>
+      <div class="form-group">
+        <!-- <label for="email" class="control-label">Message</label> -->
+        <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+          <textarea class="form-control" rows="3" name="body" placeholder="Let's build this">I've got a great idea.💡 Do you think we can launch 🚀 it by 📆?</textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-6 col-sm-offset-3 col-md-offset-4">
+          <button type="submit" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Send</button>
+        </div>
+      </div>
+    </form>
 
     <div class="footer-col-1 column">
       <ul>
@@ -57,3 +80,29 @@
   </div>
 
 </footer>
+
+<script>
+
+function hasHtml5Validation () {
+  return typeof document.createElement('input').checkValidity === 'function';
+}
+
+if (hasHtml5Validation()) {
+  document.querySelectorAll('.validate-form')[0].addEventListener('submit', function (e) {
+    if (!this.checkValidity()) {
+      e.preventDefault();
+      var invalidInput = document.querySelectorAll('.validate-form input:required:invalid')[0];
+      var formGroup = invalidInput.parentNode.parentNode;
+      formGroup.classList.add('has-error');
+      invalidInput.addEventListener('input', function (e) {
+        var formElement = this.parentNode.parentNode.parentNode;
+        var formGroup = this.parentNode.parentNode
+        if (formElement.checkValidity()) {
+          formGroup.classList.remove('has-error');
+        }
+      });
+    }
+  });
+
+}
+</script>
