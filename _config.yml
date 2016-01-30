@@ -1,7 +1,8 @@
 # Site settings
 title: David&nbsp;Mazza
 email: davidedwardmazza@gmail.com
-description: "I am an engineer. I write Ruby, Objective-C and this."
+brand_values: "I simplify new ideas and turn them into apps."
+description: "I write Swift, Objective-C and this."
 baseurl: ""
 category_dir: ""
 url: "http://davidmazza.com"
