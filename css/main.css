@@ -445,6 +445,31 @@ img {
   margin: 30px 0;
 }
 
+.post-content img {
+  max-width:100%;
+  background-color: #333;
+  padding: 50px 30%;
+  margin-bottom: 20px;
+}
+
+.post-content img.half-width {
+  max-width: 50%;
+  float: left;
+  padding: 50px 10%;
+}
+
+.post-content .thumbnail-canvas:first-child img.half-width {
+  padding-right: 5%;
+}
+
+.post-content .thumbnail-canvas:nth-last-child(2) img.half-width {
+  padding-left: 5%;
+}
+
+.modal-body img {
+  padding: 0 0;
+}
+
 .post-content ul,
 .post-content ol { padding-left: 20px; }
 
