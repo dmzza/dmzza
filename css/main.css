@@ -375,17 +375,21 @@ img {
 /* ----------------------------------------------------------*/
 
 .post {
-  width:800px;
-  margin: 0 auto 100px auto;
+  margin-bottom: 100px;
 }
 
-.post-header { margin: 10px 0 30px; }
+.post-header {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #333;
+}
 
 .post-header h1 {
   font-size: 42px;
   letter-spacing: -1.75px;
   line-height: 1;
   font-weight: 300;
+  text-align: left;
 }
 
 .post-header .meta {
@@ -395,10 +399,9 @@ img {
   margin-top: 5px;
 }
 
-.post-content { margin: 0 0 30px; }
+.post-content { margin-bottom:30px; }
 
 .post-content > * { margin: 20px 0; }
-
 
 .post-content h1,
 .post-content h2,
@@ -424,6 +427,12 @@ img {
 .post-content h4 {
   font-size: 20px;
   letter-spacing: -1px;
+}
+
+.post-content p, .post-content h3 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .post-content blockquote {
