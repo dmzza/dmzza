@@ -1,0 +1,22 @@
+<!-- Button trigger modal -->
+<div class="thumbnail-canvas"><a data-toggle="modal" href="#{{ include.alt | slugify }}-modal">
+  <img src="{{ include.src }}" alt="{{ include.alt }}" class="{{ include.class }}">
+</a></div>
+
+<!-- Modal -->
+<div class="modal fade" id="{{ include.alt | slugify }}-modal" tabindex="-1" role="dialog" aria-labelledby="{{ include.alt | slugify }}-label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="{{ include.alt | slugify }}-label" style="text-transform:capitalize;">{{ include.alt }}</h4>
+      </div>
+      <div class="modal-body">
+        <img src="{{ include.src }}" alt="{{ include.alt }}" class="img-responsive">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
