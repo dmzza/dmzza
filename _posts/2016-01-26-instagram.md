@@ -44,7 +44,7 @@ If the founder of Instagram had come to me with a thirty-day budget to build the
 Signing up for an app collects your email address, but more importantly, this is where new users will form opinions about the app, so it is a crucial part to spend time on. New users learn how to enhance and publish a photo, but are also inspired to travel and take amazing photos.
 
 ### 5-7 days
-The second thing the user tries is filtering and framing a photo. The interface for this is easy to imagine, and not difficult to build. When you’re ready to publish the photo, it needs to be uploaded to the cloud. [insert progress bar gif] Anything that takes time in the app needs to look busy rather than frozen.
+The second thing the user tries is filtering and framing a photo. The interface for this is easy to imagine, and not difficult to build. When you’re ready to publish the photo, it needs to be uploaded to the cloud. <!-- [insert progress bar gif] --> Anything that takes time in the app needs to look busy rather than frozen.
 
 ### 3-5 days
 The feed will keep users around, but it can also be very modest at first. I would only build a vertical list of photos that can be seen one at a time. This interface can be used both for the feed and profile tabs.
