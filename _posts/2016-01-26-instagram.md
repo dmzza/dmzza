@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Three simple features that are responsible for Instagram's success"
+title:  "Instagram could have launched with only 3 simple features"
 date: 2016-01-26 14:30:00
 categories: blog
 thumbnail: "/img/Tune Out 1.2 thumbnail.png"
