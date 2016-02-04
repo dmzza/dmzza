@@ -15,8 +15,8 @@ layout: default
       </div>
       <div class="modal-footer">
         <h2>See poll results after the article.</h2>
-        <button type="button" class="btn btn-lg btn-default btn-block" data-agrees="false" data-dismiss="modal">Nah, peice of cake.</button>
-        <button type="button" class="btn btn-lg btn-primary btn-block" data-agrees="true" data-dismiss="modal">Yeah, seems kinda daunting.</button>
+        <button type="button" class="btn btn-lg btn-default btn-block question-response" data-agrees="false" data-dismiss="modal">Nah, peice of cake.</button>
+        <button type="button" class="btn btn-lg btn-primary btn-block question-response" data-agrees="true" data-dismiss="modal">Yeah, seems kinda daunting.</button>
 
       </div>
     </div>
@@ -25,7 +25,30 @@ layout: default
 
 <script>
 $(function() {
+  var question = 'Do you think Instagram would be hard to build?';
   $('#welcomeModal').modal();
+
+  $('#welcomeModal').on('shown.bs.modal', function(e) {
+    ga('send', 'event', 'Questions', 'show', question, {
+      nonInteraction: true
+    });
+  });
+
+  $('.question-response').on('click', function(e) {
+    var responseButton = $(e.target);
+    if(responseButton.data('agrees') == true) {
+      ga('send', 'event', 'Questions', 'agree', question);
+    } else {
+      ga('send', 'event', 'Questions', 'disagree', question);
+    }
+  })
+
+  $('#welcomeModal').on('hide.bs.modal', function(e) {
+    ga('send', 'event', 'Questions', 'dismiss', question, {
+      nonInteraction: true
+    });
+  });
+
 });
 </script>
 
