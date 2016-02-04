@@ -99,6 +99,8 @@ if (hasHtml5Validation()) {
           formGroup.classList.remove('has-error');
         }
       });
+    } else {
+      fbq('track', 'Lead');
     }
   });
 
