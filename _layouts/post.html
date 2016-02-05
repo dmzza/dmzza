@@ -7,7 +7,7 @@ layout: default
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="welcomeModalLabel">One quick question before you read:</h4>
+        <h4 class="modal-title" id="welcomeModalLabel">One quick question before you finish reading:</h4>
       </div>
       <div class="modal-body">
         <div style="font-weight:600; font-size:3em; text-align:center; text-transform:uppercase; line-height:1.2em;">Do you think Instagram would be hard to build?</div>
@@ -26,7 +26,11 @@ layout: default
 <script>
 $(function() {
   var question = 'Do you think Instagram would be hard to build?';
-  $('#welcomeModal').modal();
+
+  window.setTimeout(function() {
+    $('#welcomeModal').modal();
+  }, 5000);
+
 
   $('#welcomeModal').on('shown.bs.modal', function(e) {
     ga('send', 'event', 'Questions', 'show', question, {
