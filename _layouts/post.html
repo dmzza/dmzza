@@ -59,7 +59,12 @@ $(function() {
 
 <div class="post">
   <div class="row">
-    <div class="col-xs-12">
+    <header class="post-header col-xs-12">
+      <h1>{{ page.title }}</h1>
+      <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    </header>
+
+    <div class="col-xs-12 post-hero">
       {% if page.hero %}
         <img src="{{ page.hero | prepend: site.baseurl }}" id="hero" class="img-responsive">
       {% endif %}
@@ -68,11 +73,6 @@ $(function() {
         <iframe width="800" height="500" src="//www.youtube.com/embed/{{ page.youtube }}" frameborder="0" allowfullscreen></iframe>
       {% endif %}
     </div>
-
-    <header class="post-header col-xs-12">
-      <h1>{{ page.title }}</h1>
-      <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-    </header>
 
     <article class="post-content col-xs-12">
     {{ content }}

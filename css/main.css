@@ -374,6 +374,16 @@ img {
 /* Post styles */
 /* ----------------------------------------------------------*/
 
+#hero {
+  margin: 0 auto;
+}
+
+.post-hero {
+  background-color: #333;
+  padding: 35px 0;
+}
+
+
 .post {
   margin-bottom: 100px;
 }
