@@ -7,17 +7,32 @@ layout: default
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="welcomeModalLabel">One quick question before you finish reading:</h4>
+        <h4 class="modal-title" id="welcomeModalLabel">Hey there!</h4>
       </div>
       <div class="modal-body">
-        <div style="font-weight:600; font-size:3em; text-align:center; text-transform:uppercase; line-height:1.2em;">Do you think Instagram would be hard to build?</div>
-
+        <div style="font-weight:600; font-size:3em; text-align:center; text-transform:uppercase; line-height:1.2em;">Have an idea?</div>
+        <div class="row" style="background-color:#333; margin: 10px; padding-top:20px;">
+          <figure class="col-xs-12 col-sm-6" style="padding-bottom:20px;">
+            <img src="/img/ios-app-cost-spreadsheet.png" class="img-responsive" style="margin: 0 auto;">
+          </figure>
+          <p class="col-xs-12 col-sm-6" style="color:white">Get the spreadsheet that I use to estimate the cost of building an app.</p>
+        </div>
       </div>
       <div class="modal-footer">
-        <!-- <h2>See poll results after the article.</h2> -->
-        <button type="button" class="btn btn-lg btn-default btn-block question-response" data-agrees="false" data-dismiss="modal">Nah, peice of cake.</button>
-        <button type="button" class="btn btn-lg btn-primary btn-block question-response" data-agrees="true" data-dismiss="modal">Yeah, seems kinda daunting.</button>
-
+        <form accept-charset="UTF-8" action="https://formkeep.com/f/504d80e1c60e" method="POST">
+          <input type="hidden" name="utf8" value="✓">
+          <div class="form-group">
+            <!-- <label for="email" class="control-label col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-1 col-lg-offset-3">Your Email</label> -->
+            <div class="col-xs-12">
+              <input type="email" class="form-control" name="email" autocomplete="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]+" placeholder="email@me.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+              <button type="submit" class="btn btn-success btn-lg btn-block question-response" data-agrees="true"><img src="/img/checklist-white.png" style="height:22px; vertical-align:bottom;"> Get it</button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -25,11 +40,12 @@ layout: default
 
 <script>
 $(function() {
-  var question = 'Do you think Instagram would be hard to build?';
+  var question = 'Have an idea? - spreadsheet';
 
   window.setTimeout(function() {
+    fbq('track', 'ViewContent');
     $('#welcomeModal').modal();
-  }, 5000);
+  }, 30000); // 30 second delay
 
 
   $('#welcomeModal').on('shown.bs.modal', function(e) {
@@ -51,7 +67,6 @@ $(function() {
     ga('send', 'event', 'Questions', 'dismiss', question, {
       nonInteraction: true
     });
-    fbq('track', 'ViewContent');
   });
 
 });
