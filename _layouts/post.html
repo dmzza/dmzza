@@ -76,7 +76,7 @@ $(function() {
   <div class="row">
     <header class="post-header col-xs-12">
       <h1>{{ page.title }}</h1>
-      <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+      <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • <a href="http://davidmazza.com">{{ page.author }}</a>{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
     </header>
 
     <div class="col-xs-12 post-hero">

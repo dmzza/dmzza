@@ -428,8 +428,11 @@ img {
 .post-header .meta {
   font-family: "Avenir Next", "Futura", Helvetica, Arial, sans-serif;
   font-size: 15px;
-  color: #818181;
   margin-top: 5px;
+}
+
+.post-header .meta, .post-header .meta a {
+  color: #818181;
 }
 
 .post-content { margin-bottom:30px; }
