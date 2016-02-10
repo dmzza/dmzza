@@ -100,23 +100,28 @@ p, input, blockquote, figcaption {
 blockquote {
   padding: 40px;
   background-color: white;
+  border-left: 0;
 }
 
 blockquote>p {
   font-size: 0.8em;
   margin: 0 auto;
   max-width: 600px;
+  padding-bottom: 5px;
 }
 
 blockquote>blockquote {
-  border-left: 4px solid #ccc;
-  padding-left: 20px;
   font-size: 18px;
   opacity: .6;
   line-height: 1.5;
   letter-spacing: 0.6px;
   font-style: italic;
   margin: 30px 0;
+}
+
+blockquote>blockquote p {
+  padding-left: 20px;
+  border-left: 4px solid #ccc;
 }
 
 figcaption {
