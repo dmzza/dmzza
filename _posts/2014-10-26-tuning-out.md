@@ -7,9 +7,9 @@ thumbnail: "/img/Tune Out 1.2 thumbnail.png"
 realpixels: "/img/Tune Out Pixels.png"
 ---
 
-> Tune Out is a nifty lifehack for the subway. It will alert you when your stop is approaching so that you can focus on reading, napping, gaming, doodling, and daydreaming while you ride.
->
-> David Mazza, 2013
+>> Tune Out is a nifty lifehack for the subway. It will alert you when your stop is approaching so that you can focus on reading, napping, gaming, doodling, and daydreaming while you ride.
+>> 
+>> David Mazza, 2013
 
 I have always avoided putting ads into my apps. Advertising has always been an annoyance to me. I didn't want to create something in my free time that I would be annoyed to use. This made sense when I did side projects as a way to learn a programming language. Now I am more interested in building a business.
 

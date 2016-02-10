@@ -7,9 +7,9 @@ thumbnail: "/img/driverless.jpg"
 youtube: "rld0KDcan_w"
 ---
 
-> The earth probably sees plastic as just another one of its children. Could be
-> the only reason the earth allowed us to be spawned from it in the first place.
-> It wanted plastic for itself.
+>> The earth probably sees plastic as just another one of its children. Could be the only reason the earth allowed us to be spawned from it in the first place.
+>>
+>> It wanted plastic for itself.
 >
 > George Carlin
 

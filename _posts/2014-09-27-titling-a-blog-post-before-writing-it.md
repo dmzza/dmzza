@@ -7,9 +7,9 @@ thumbnail: "/img/watch.png"
 youtube: "GIFdBp8rbtA"
 ---
 
-> If you imagine an object that is a television, that’s a radio, that’s a computer, whatever computer means… and you imagine them converging into one object, what should that object be, what on earth should it look like?
+>> If you imagine an object that is a television, that’s a radio, that’s a computer, whatever computer means… and you imagine them converging into one object, what should that object be, what on earth should it look like?
 >
-> Jon Ive
+> Jony Ive
 
 Working in an office from nine o’clock in the morning to some later time in the evening is not the dream promised by technology. But the opportunity to work in the role that I now have is more than I ever could have expected. On screen, I am a Software Engineer in the Engineering Department. Our company of 14 also has a Marketing Department of one, a Product Division of 14 and Operations or a ‘COO’. 
 

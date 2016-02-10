@@ -7,11 +7,11 @@ thumbnail: "/img/2020.jpg"
 youtube: "AfK8h73bb-o"
 ---
 
-> We haven't built mechanisms to allow experimentation. There's many, many exciting and important things you could do that you just can't do because they're illegal, or they're not allowed by regulation, and that makes sense, we don't want the world to change too fast.
+>> We haven't built mechanisms to allow experimentation. There's many, many exciting and important things you could do that you just can't do because they're illegal, or they're not allowed by regulation, and that makes sense, we don't want the world to change too fast.
+>>
+>> Maybe we should set aside a small part of the world ... (watch at 25:48)
 >
-> Maybe we should set aside a small part of the world ...
->
-> Larry Page, 25:48
+> Larry Page
 
 My plan for the next five years is very similar to many 20-somethings in the Bay Area. I’m looking for a full time position now so that by 30, I won’t be a junior engineer anymore. What happens in between is less clear. The only certain thing is that I will be in a very different position.
 
