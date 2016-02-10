@@ -502,6 +502,10 @@ img {
   padding-left: 5%;
 }
 
+.modal {
+  display: none;
+}
+
 .modal-body img {
   padding: 0 0;
 }
