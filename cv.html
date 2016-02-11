@@ -82,11 +82,15 @@
       color: #000;
     }
 
-    a {
+    a, a>em {
       color: #000;
       transition: color 0.2s linear;
       -webkit-transition: color 0.2s linear;
       font-family: 'SF UI Text', 'Helvetica Neue', 'Helvetica', sans-serif;
+    }
+
+    a em {
+      font-weight: 700;
     }
 
     p {
@@ -94,10 +98,10 @@
       line-height: 1.3em;
       font-family: 'SF UI Text', 'Helvetica Neue', 'Helvetica', sans-serif;
     }
-    p:hover a, ul:hover a {
+    p:hover a, ul:hover a, ul:hover a>em {
       color: #40A7D8;
     }
-    p:hover a:hover, ul:hover a:hover {
+    p:hover a:hover, ul:hover a:hover, ul:hover a:hover>em {
       color: #A563EC;
     }
 
