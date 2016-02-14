@@ -46,7 +46,7 @@ If the founder of Instagram had come to me with a $15,000 budget to build the fi
 Signing up for an app collects your email address, but more importantly, this is where new users form opinions about the app, so it is a critical to get this right. I would use it to show how to enhance and publish a photo, but also to inspire people to travel and take amazing photos. I want users to imagine themselves using the app and fulfilling their aspirations.
 
 ### Making Photos
-The second thing the user tries is filtering and framing a photo. The interface for this is easy to imagine, and not difficult to build. When you’re ready to publish the photo, it needs to be uploaded to the cloud. <!-- [insert progress bar gif] --> Anything that takes time in the app needs to look busy rather than frozen.
+Taking a photo needs to be easy, so the interface shouldn't be difficult to build. The tricky bit is uploading the photo. Do you upload it in the background and just hope that it works or do you make the user wait for it to finish? Sharing the photo is the whole point of this app, so I would make the user wait. If something goes wrong, they can try again. That means we need to handle every case; loading, success, failure, server down, slow connection and no connection. There is nothing more frustrating than a frozen app or a cryptic error message. 
 
 ### Scrolling through feeds
 The feed will keep users around, but it can also be very modest at first. I would only build a vertical list of photos that can be seen one at a time. This interface can be used both for the feed and profile tabs.
