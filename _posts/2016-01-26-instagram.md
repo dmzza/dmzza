@@ -39,17 +39,17 @@ Hearts are an effortless way to appreciate people you follow. It gives people a 
 
 There are hundreds of apps that will filter and frame your photo, but Instagram compelled even timid users to share every photo to the feed with a subtle tweak: whether you use it as a camera or an editor, the result isn’t saved to your device until you publish it onto your profile.
 
-## Instagram in 30 days
-If the founder of Instagram had come to me with a thirty-day budget to build the first version of Instagram, I would have started by focusing on those three critical features.
+## The first steps to Instagram
+If the founder of Instagram had come to me with a $15,000 budget to build the first version of Instagram, I would have started by focusing on those three critical features.
 
-### 10-15 days
-Signing up for an app collects your email address, but more importantly, this is where new users will form opinions about the app, so it is a crucial part to spend time on. New users learn how to enhance and publish a photo, but are also inspired to travel and take amazing photos.
+### Onboarding
+Signing up for an app collects your email address, but more importantly, this is where new users form opinions about the app, so it is a critical to get this right. I would use it to show how to enhance and publish a photo, but also to inspire people to travel and take amazing photos. I want users to imagine themselves using the app and fulfilling their aspirations.
 
-### 5-7 days
-The second thing the user tries is filtering and framing a photo. The interface for this is easy to imagine, and not difficult to build. When you’re ready to publish the photo, it needs to be uploaded to the cloud. <!-- [insert progress bar gif] --> Anything that takes time in the app needs to look busy rather than frozen.
+### Making Photos
+Taking a photo needs to be easy, so the interface shouldn't be difficult to build. The tricky bit is uploading the photo. Do you upload it in the background and just hope that it works or do you make the user wait for it to finish? This app is worthless if people can't share photos, so I would make the user wait. If something goes wrong, they can try again. That means we need to handle every case; loading, success, failure, server down, slow connection and no connection. There is nothing more frustrating than a frozen app or a cryptic error message.
 
-### 3-5 days
+### Scrolling through feeds
 The feed will keep users around, but it can also be very modest at first. I would only build a vertical list of photos that can be seen one at a time. This interface can be used both for the feed and profile tabs.
 
-### Budget
-Leaving room for some days spent going back and forth with design ideas for critical pieces of the interface, the first working version could be shipped in about 30 days, which works out to $15k. If you’re looking for someone to build the first version of your idea, shoot me an email.
+## Getting to $1B
+Nobody can reproduce the exact timing, luck, and thought process that created Instagram, but anyone can start small and iterate. Apps that start big are slow to change. Think about the smallest possible thing you can afford to build now that could become an important piece of something much larger.
