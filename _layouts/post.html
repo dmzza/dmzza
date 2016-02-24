@@ -44,8 +44,11 @@ $(function() {
 
   window.setTimeout(function() {
     fbq('track', 'ViewContent');
-    $('#welcomeModal').modal();
   }, 30000); // 30 second delay
+
+  window.setTimeout(function() {
+    $('#welcomeModal').modal();
+  }, 90000); // 90 second delay
 
 
   $('#welcomeModal').on('shown.bs.modal', function(e) {
