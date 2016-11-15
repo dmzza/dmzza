@@ -19,12 +19,12 @@ layout: default
         </div>
       </div>
       <div class="modal-footer">
-        <form class="validate-form" accept-charset="UTF-8" action="https://formkeep.com/f/504d80e1c60e" method="POST">
+        <form class="validate-form" accept-charset="UTF-8" action="http://salutant.herokuapp.com/submissions" method="POST">
           <input type="hidden" name="utf8" value="✓">
           <div class="form-group">
             <!-- <label for="email" class="control-label col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-1 col-lg-offset-3">Your Email</label> -->
             <div class="col-xs-12">
-              <input type="email" class="form-control" name="email" autocomplete="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]+" placeholder="email@me.com">
+              <input type="email" class="form-control" name="submission[email]" autocomplete="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]+" placeholder="email@me.com">
             </div>
           </div>
           <div class="form-group">
@@ -32,6 +32,18 @@ layout: default
               <button type="submit" class="btn btn-success btn-lg btn-block question-response" data-agrees="true"><img src="/img/checklist-white.png" style="height:22px; vertical-align:bottom;"> Get it</button>
             </div>
           </div>
+          <!--
+            Autoresponse
+            Subject: [Spreadsheet] Estimate the cost to build your idea
+            Body:
+            Here is a link to the spreadsheet I used to estimate how much it would cost to build Instagram 1.0. Use it to estimate the cost of your own idea right on Google Docs. This copy is only shared between you and me.
+
+            https://docs.google.com/spreadsheets/d/11WlmmKlhLFP9hLColoQADCB-BRwx0cLNYZDU6A930SU/edit?usp=sharing
+
+            If you have any questions, just reply to this email.
+
+            David Mazza
+          -->
         </form>
       </div>
     </div>

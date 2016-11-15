@@ -4,21 +4,21 @@
 
   <div class="wrap">
 
-    <form class="form-horizontal validate-form" id="contact" accept-charset="UTF-8" action="https://formkeep.com/f/730a37b1c75a" method="POST">
+    <form class="form-horizontal validate-form" id="contact" accept-charset="UTF-8" action="https://salutant.herokuapp.com/submissions" method="POST">
       <div class="row">
         <div class="idea col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">Let's make an&nbsp;app</div>
       </div>
       <input type="hidden" name="utf8" value="✓">
       <div class="form-group">
-        <label for="email" class="control-label col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-1 col-lg-offset-3">Your Email</label>
+        <label for="submission_email" class="control-label col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-1 col-lg-offset-3">Your Email</label>
         <div class="col-sm-6 col-md-4">
-          <input type="email" class="form-control" name="email" autocomplete="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]+" placeholder="reply@me.com">
+          <input type="email" class="form-control" name="submission[email]" id="submission_email" autocomplete="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]+" placeholder="reply@me.com">
         </div>
       </div>
       <div class="form-group">
         <!-- <label for="body" class="control-label">Message</label> -->
         <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-          <textarea class="form-control" rows="3" name="body" placeholder="Let's build this">I've got a great idea.💡 Do you think we can launch 🚀 it by 📆?</textarea>
+          <textarea class="form-control" rows="3" name="submission[body]" id="submission_body" placeholder="Let's build this">I've got a great idea.💡 Do you think we can launch 🚀 it by 📆?</textarea>
         </div>
       </div>
       <div class="form-group">
@@ -26,6 +26,24 @@
           <button type="submit" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Send</button>
         </div>
       </div>
+      <!--
+        Autoresponse
+        Subject: Thanks!
+        Body:
+        Just confirming that I got your email.
+
+        Here are two links to some of my best work:
+
+         * <http://elevateapp.com>
+         * <https://itunes.apple.com/us/app/tune-out-l-train-subway-nyc/id644130884?mt=8>
+         * I would send more, but then I might get trapped by spam filters
+
+        If I could recommend just one blog post to read, it would be "[Hardest Lessons for Startups to Learn](http://paulgraham.com/startuplessons.html)" by Paul Graham.
+
+        You'll hear from me really soon.
+
+        ### David Mazza
+      -->
     </form>
 
 
